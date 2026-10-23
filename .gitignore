@@ -1,0 +1,31 @@
+node_modules/
+**/dist/
+.env
+.env.*
+!.env.example
+.data/
+playwright-report/
+test-results/
+apps/android/.gradle/
+apps/android/**/build/
+apps/android/local.properties
+*.jks
+*.keystore
+.DS_Store
+
+# Rebuildable delivery packages and source-recording analysis.
+deliverables/
+review/frames/
+review/detail/
+review/*.jpg
+review/*ocr.json
+review/ocr
+review/visible-requirements.txt
+review/figma/*-context.txt
+
+# Other local signing material and runtime caches.
+*.p12
+*.pem
+*.key
+__pycache__/
+*.pyc

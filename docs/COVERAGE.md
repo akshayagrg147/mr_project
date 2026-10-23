@@ -1,0 +1,31 @@
+# Reviewed scope → implementation
+
+The 139 Figma frames include repeated success, empty, validation, access and correction states. The implementation consolidates those states into connected screens and reusable forms. It does not claim 139 separate routes or that the unavailable Hindi conversation was implemented.
+
+| Design/source area                                       | Native Android                                                                                                       | Web admin / API                                                                              |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Company sign-in, local PIN, help, session expiry         | Welcome/sign-in, encrypted session, 6-digit PIN with attempt limit, account recovery instructions                    | HTTP-only browser session, password change/reset, employee setup, session revocation         |
+| Day planning, route, joint work                          | Plan form and dashboard; persisted offline                                                                           | Day plan lists, routes, users, hierarchy                                                     |
+| Doctor/chemist/hospital/stockist calls                   | Assigned customers, profile, three-step visit, outcome, remarks, campaigns                                           | Customer CRUD, atomic CSV import, call details and GPS evidence                              |
+| Detailing, samples, POB, promotional inputs              | Product choices, authenticated presentation download, quantities and order total                                     | Product/PDF management, server-priced orders, stock ledger and balances                      |
+| RCPA, reminders                                          | Schema-backed forms and lists                                                                                        | Scoped records, reporting touchpoints                                                        |
+| Daily call report                                        | Date summary, prepare, submit, return/correct/resubmit                                                               | Immutable submitted report, manager decision/history, audit                                  |
+| Customer/HQ/route masters, tagging                       | Shared catalog forms; customer assigned representative and route; HQ administration depends on role                  | Employee/HQ/territory/customer/route CRUD; customer route links are fields in customer setup |
+| Tour plans, campaigns, sponsorship                       | Records, dates, campaign doctors, requests and status                                                                | Approval queues, date/product/customer campaign setup                                        |
+| Expenses, receipts, TA/DA                                | Form, receipt capture through document picker, offline attachment queue, statement                                   | Configurable rates and receipt threshold, receipt downloads, expense decisions               |
+| Leave                                                    | Date-range requests and state                                                                                        | Overlap validation, manager approve/return/reject                                            |
+| Secondary sales, doctor sales                            | Sales form/list with type selection                                                                                  | Sales activity and CSV reports                                                               |
+| Challans, stock                                          | Recipient acknowledgement, discrepancy note, stock view                                                              | Dispatch challans; transactional stock receipt and consumption                               |
+| Tracking/replay/filters                                  | Explicit shift, visible foreground service, GPS permission state, durable offline location queue, boot recovery path | Fleet status, last fix/accuracy, time-ordered replay, device events and observed gaps        |
+| Productivity, deviations, missed coverage, product reach | Personal summaries and workflow lists                                                                                | Derived report tables, date filters and formula-safe CSV downloads                           |
+| Notifications, settings, sync conflict                   | In-app announcements, sync center, review/retry/discard and optimistic edit correction                               | Company policies, roles matrix, integrations status and audit                                |
+| Hindi                                                    | Hindi home greeting example, as in the design                                                                        | Full Hindi localization was not agreed/available; English remains the operational UI         |
+
+## Deliberate implementation boundaries
+
+- TA/DA policy rates are configuration; expense claims are entered and reviewed rather than automatically reimbursed. GPS distance is evidence and excludes unreliable segments; it is not automatically treated as payable distance.
+- Customer route tagging is part of the customer record rather than a separate duplicate data store. Tour plans are submitted per day; a calendar month is represented by its daily entries.
+- Reports and sales are SFA operational records. Full accounting, payroll, manufacturing and supply-chain posting are not implemented.
+- In-app updates work. Email, SMS, ERP and remote push are visibly unconfigured, not mocked as working integrations.
+- Document presentations open in the Android device’s installed viewer after authenticated download. Replace fictional demo descriptions with approved company materials.
+- The local database is designed for a single server. Production deployment, scale verification, final device policies, store signing and client acceptance remain separate release steps.

@@ -1,0 +1,4329 @@
+[
+  {
+    "group": {
+      "name": "01 / Access & a planned day",
+      "y": 40,
+      "caption": "Company sign-in, PIN, permissions, day planning and a useful field dashboard."
+    },
+    "screens": [
+      {
+        "id": "M01",
+        "title": "MR Connect",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Every visit.\nA stronger connection.",
+            "body": "Plan your day, meet your customers and report with confidence.",
+            "icon": "briefcase-medical",
+            "bg": "navy"
+          },
+          {
+            "kind": "text",
+            "text": "YOUR FIELD WORKSPACE",
+            "style": "Caption",
+            "color": "brand"
+          },
+          {
+            "kind": "row",
+            "title": "Plan with purpose",
+            "sub": "Routes, schedules and joint working",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Capture the complete visit",
+            "sub": "Calls, products, samples and POB",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Stay connected",
+            "sub": "Approvals, updates and secure sync",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "text",
+            "text": "Field representative mobile app · Version 1.0",
+            "style": "Small",
+            "color": "muted"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Get started",
+            "to": "M02",
+            "secondary": false
+          }
+        ]
+      },
+      {
+        "id": "M02",
+        "title": "Welcome back",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Sign in with your company account.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "field",
+            "label": "Company code *",
+            "value": "VIDYA",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Employee ID *",
+            "value": "MR-001182",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Password *",
+            "value": "••••••••••",
+            "state": "Default"
+          },
+          {
+            "kind": "check",
+            "label": "Remember this company",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "button",
+            "label": "Forgot password?",
+            "to": "M04",
+            "secondary": true
+          },
+          {
+            "kind": "notice",
+            "title": "Need access?",
+            "body": "Your company administrator creates your account.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "subtitle": "Secure company workspace",
+        "actions": [
+          {
+            "label": "Sign in",
+            "to": "M03",
+            "secondary": false
+          }
+        ],
+        "back": "M01"
+      },
+      {
+        "id": "M03",
+        "title": "Unlock your workspace",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "A little security.\nA smoother day.",
+            "body": "Enter your 6-digit PIN to continue.",
+            "icon": "shield-check",
+            "bg": "soft"
+          },
+          {
+            "kind": "field",
+            "label": "Your PIN *",
+            "value": "● ● ● ● ● ●",
+            "state": "Default"
+          },
+          {
+            "kind": "text",
+            "text": "1       2       3\n\n4       5       6\n\n7       8       9\n\n         0",
+            "style": "H2",
+            "color": "ink"
+          },
+          {
+            "kind": "button",
+            "label": "Forgot or reset PIN",
+            "to": "M04",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Unlock",
+            "to": "M05",
+            "secondary": false
+          }
+        ],
+        "back": "M02"
+      },
+      {
+        "id": "M04",
+        "title": "Reset access",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "We’ll send reset instructions to your registered contact.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "field",
+            "label": "Company code *",
+            "value": "VIDYA",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Employee ID *",
+            "value": "MR-001182",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Registered mobile or email *",
+            "value": "aman.sharma@example.com",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Check your registered contact",
+            "body": "Reset link sent to your registered contact.",
+            "tone": "Success",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Back to sign in",
+            "to": "M02",
+            "secondary": false
+          }
+        ],
+        "back": "M02"
+      },
+      {
+        "id": "M05",
+        "title": "Ready for the field",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Enable location\nfor verified visits",
+            "body": "Location supports your route, call check-in and distance reporting.",
+            "icon": "map-pin",
+            "bg": "navy"
+          },
+          {
+            "kind": "notice",
+            "title": "During your working day",
+            "body": "Tracking starts with your day plan and ends when you finish reporting.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "row",
+            "title": "Location permission",
+            "sub": "Allow precise location for call check-in",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Notifications",
+            "sub": "Get reminders and approval updates",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "text",
+            "text": "Tracking policy and GPS rules are controlled by your company.",
+            "style": "Small",
+            "color": "muted"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Allow & continue",
+            "to": "M06",
+            "secondary": false
+          },
+          {
+            "label": "Later",
+            "to": "M66",
+            "secondary": true
+          }
+        ],
+        "back": "M03"
+      },
+      {
+        "id": "M06",
+        "title": "Good morning, Aman",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Thursday, 22 October 2026",
+            "style": "Small",
+            "color": "muted"
+          },
+          {
+            "kind": "hero",
+            "title": "A productive day\nstarts with a plan.",
+            "body": "Choose your route and working type before your first call.",
+            "icon": "calendar-days",
+            "bg": "navy"
+          },
+          {
+            "kind": "metrics",
+            "items": [
+              [
+                "Planned visits",
+                "0",
+                "Plan your day"
+              ],
+              [
+                "Pending DCRs",
+                "2",
+                "Review reports"
+              ]
+            ]
+          },
+          {
+            "kind": "button",
+            "label": "Create today’s plan",
+            "to": "M07",
+            "secondary": false
+          },
+          {
+            "kind": "row",
+            "title": "Pending reporting dates",
+            "sub": "20 and 21 October",
+            "to": "M60",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Updates from head office",
+            "sub": "New campaign brief available",
+            "to": "M12",
+            "right": null
+          }
+        ],
+        "subtitle": "Delhi HQ · Pharma division",
+        "nav": "Today"
+      },
+      {
+        "id": "M07",
+        "title": "Plan your day",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "DCR date *",
+            "value": "22 Oct 2026 · Thursday",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Working type *",
+            "value": "Field work",
+            "state": "Default"
+          },
+          {
+            "kind": "row",
+            "title": "Route *",
+            "sub": "Delhi to Delhi · Local",
+            "to": "M08",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Work with",
+            "sub": "Select colleagues",
+            "to": "M09",
+            "right": null
+          },
+          {
+            "kind": "field",
+            "label": "Planned doctor visits",
+            "value": "8",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Planned chemist visits",
+            "value": "2",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Day plan remark",
+            "value": "Dyalpur and Geeta Colony coverage",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Location ready",
+            "body": "Delhi · GPS accuracy 12 m",
+            "tone": "Success",
+            "icon": "map-pin"
+          }
+        ],
+        "subtitle": "Step 1 · Start your working day",
+        "actions": [
+          {
+            "label": "Submit day plan",
+            "to": "M10",
+            "secondary": false
+          }
+        ],
+        "back": "M06"
+      },
+      {
+        "id": "M08",
+        "title": "Choose a route",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search 37 assigned routes"
+          },
+          {
+            "kind": "tabs",
+            "items": [
+              "All routes",
+              "Local",
+              "Outstation"
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "Delhi to Delhi",
+            "sub": "Local · 85 doctors · 341 chemists",
+            "to": "M07",
+            "right": "Selected"
+          },
+          {
+            "kind": "row",
+            "title": "Delhi to Gurugram",
+            "sub": "Ex-station · 4 chemists",
+            "to": "M07",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Delhi to Dehradun",
+            "sub": "Outstation · 7 doctors · 55 chemists",
+            "to": "M07",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Delhi to Mayur Vihar",
+            "sub": "Local · 23 km one way",
+            "to": "M07",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Meerut to Bareilly",
+            "sub": "Outstation · 244 km one way",
+            "to": "M07",
+            "right": null
+          }
+        ],
+        "actions": [
+          {
+            "label": "Use selected route",
+            "to": "M07",
+            "secondary": false
+          }
+        ],
+        "back": "M07"
+      },
+      {
+        "id": "M09",
+        "title": "Joint working",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search by name or role"
+          },
+          {
+            "kind": "check",
+            "label": "Aman Sharma · Self",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Anirudh Kumar · Regional manager",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Srivatsan Murali · Director",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Kumar Abhishek · Marketing",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "notice",
+            "title": "Work-with visibility",
+            "body": "Your joint working selection is included in the daily report.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Confirm colleagues",
+            "to": "M07",
+            "secondary": false
+          }
+        ],
+        "back": "M07"
+      },
+      {
+        "id": "M10",
+        "title": "Day plan submitted",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "You’re ready\nfor the day.",
+            "body": "Your plan has been saved and synced.",
+            "icon": "check-check",
+            "bg": "soft"
+          },
+          {
+            "kind": "kv",
+            "label": "Date",
+            "value": "22 Oct 2026"
+          },
+          {
+            "kind": "kv",
+            "label": "Route",
+            "value": "Delhi to Delhi"
+          },
+          {
+            "kind": "kv",
+            "label": "Working type",
+            "value": "Field work"
+          },
+          {
+            "kind": "kv",
+            "label": "With",
+            "value": "Anirudh Kumar"
+          },
+          {
+            "kind": "kv",
+            "label": "Planned calls",
+            "value": "10"
+          },
+          {
+            "kind": "status",
+            "label": "Synced",
+            "tone": "Success"
+          },
+          {
+            "kind": "button",
+            "label": "View today’s visits",
+            "to": "M13",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Go to today",
+            "to": "M11",
+            "secondary": false
+          }
+        ],
+        "back": "M07"
+      },
+      {
+        "id": "M11",
+        "title": "Good morning, Aman",
+        "blocks": [],
+        "type": "home",
+        "subtitle": "Delhi HQ · Thursday, 22 Oct",
+        "nav": "Today"
+      },
+      {
+        "id": "M12",
+        "title": "Notifications",
+        "blocks": [
+          {
+            "kind": "tabs",
+            "items": [
+              "All",
+              "Unread"
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "Expense approved",
+            "sub": "₹450 · Claim EXP-0241 · 10:45 AM",
+            "to": "M75",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "DCR needs a correction",
+            "sub": "Add remarks to your 21 Oct report",
+            "to": "M74",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Visit reminder",
+            "sub": "Dr. Alka Jain · Today, 11:00 AM",
+            "to": "M14",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Campaign brief updated",
+            "sub": "October focus products · Head office",
+            "to": "M57",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Tour plan approved",
+            "sub": "November plan · Yesterday",
+            "to": "M41",
+            "right": null
+          }
+        ],
+        "nav": "Today",
+        "back": "M11"
+      }
+    ]
+  },
+  {
+    "group": {
+      "name": "02 / Calls, products & daily reporting",
+      "y": 3192,
+      "caption": "Doctor, chemist and other customer calls · e-detailing · samples · POB · RCPA · DCR."
+    },
+    "screens": [
+      {
+        "id": "M13",
+        "title": "Today’s visits",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search by name or area"
+          },
+          {
+            "kind": "tabs",
+            "items": [
+              "Doctors",
+              "Chemists",
+              "Other"
+            ]
+          },
+          {
+            "kind": "metrics",
+            "items": [
+              [
+                "Completed",
+                "4 / 10",
+                "Today"
+              ],
+              [
+                "Next visit",
+                "11:00",
+                "Dyalpur"
+              ]
+            ]
+          },
+          {
+            "kind": "contact",
+            "title": "Dr. Alka Jain",
+            "sub": "Gynaecologist · A+ · Dyalpur",
+            "hint": "Next · 11:00 AM",
+            "to": "M14"
+          },
+          {
+            "kind": "contact",
+            "title": "Dr. Surendra Kumar",
+            "sub": "General physician · A · Geeta Colony",
+            "hint": "Planned · 12:00 PM",
+            "to": "M14"
+          },
+          {
+            "kind": "contact",
+            "title": "Dr. Anurag Gupta",
+            "sub": "Ayurvedic · A · Krishna Nagar",
+            "hint": "Completed · 10:15 AM",
+            "to": "M27"
+          },
+          {
+            "kind": "button",
+            "label": "Chemist visits",
+            "to": "M23",
+            "secondary": true
+          },
+          {
+            "kind": "button",
+            "label": "Hospital / stockist calls",
+            "to": "M25",
+            "secondary": true
+          }
+        ],
+        "subtitle": "Delhi to Delhi · 22 Oct",
+        "nav": "Calls"
+      },
+      {
+        "id": "M14",
+        "title": "Doctor profile",
+        "blocks": [
+          {
+            "kind": "contact",
+            "title": "Dr. Alka Jain",
+            "sub": "Gynaecologist · A+ · Dyalpur",
+            "hint": "2 visits / month · Assigned to you",
+            "to": "M14"
+          },
+          {
+            "kind": "tabs",
+            "items": [
+              "Overview",
+              "History",
+              "Products"
+            ]
+          },
+          {
+            "kind": "kv",
+            "label": "Last visited",
+            "value": "26 Jun 2026"
+          },
+          {
+            "kind": "kv",
+            "label": "Route",
+            "value": "Delhi to Delhi"
+          },
+          {
+            "kind": "kv",
+            "label": "Campaign",
+            "value": "October focus"
+          },
+          {
+            "kind": "row",
+            "title": "Clinic address",
+            "sub": "24, Main Road, Dyalpur, Delhi",
+            "to": "M15",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Previous call",
+            "sub": "Discussed product availability · 26 Jun",
+            "to": "M27",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "Set a reminder",
+            "to": "M22",
+            "secondary": true
+          },
+          {
+            "kind": "button",
+            "label": "Doctor-wise sales",
+            "to": "M52",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Start visit",
+            "to": "M15",
+            "secondary": false
+          }
+        ],
+        "back": "M13"
+      },
+      {
+        "id": "M15",
+        "title": "Record doctor call",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "GPS verified",
+            "tone": "Success"
+          },
+          {
+            "kind": "contact",
+            "title": "Dr. Alka Jain",
+            "sub": "Gynaecologist · Dyalpur",
+            "hint": "Check-in · 11:03 AM",
+            "to": "M14"
+          },
+          {
+            "kind": "field",
+            "label": "Call outcome *",
+            "value": "Met in person",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Campaign group",
+            "value": "October focus",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Campaign type",
+            "value": "Product awareness",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Work with",
+            "value": "Anirudh Kumar",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Visit remarks *",
+            "value": "Discussed availability and follow-up visit.",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Verified check-in",
+            "body": "Recorded at clinic · Accuracy 12 m",
+            "tone": "Success",
+            "icon": "map-pin"
+          }
+        ],
+        "subtitle": "Step 1 of 3 · Call details",
+        "actions": [
+          {
+            "label": "Next: products",
+            "to": "M16",
+            "secondary": false
+          }
+        ],
+        "back": "M14"
+      },
+      {
+        "id": "M16",
+        "title": "Product detailing",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Select the products discussed during this visit.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "search",
+            "text": "Search products"
+          },
+          {
+            "kind": "check",
+            "label": "Curity Capsules",
+            "selected": false,
+            "to": "M17"
+          },
+          {
+            "kind": "check",
+            "label": "Dermadol Gel 25 GM",
+            "selected": false,
+            "to": "M17"
+          },
+          {
+            "kind": "check",
+            "label": "Face to Face 10 GM",
+            "selected": true,
+            "to": "M17"
+          },
+          {
+            "kind": "check",
+            "label": "Hadensa Capsules",
+            "selected": true,
+            "to": "M17"
+          },
+          {
+            "kind": "button",
+            "label": "Open presentation",
+            "to": "M17",
+            "secondary": true
+          }
+        ],
+        "subtitle": "Step 2 of 3 · Products discussed",
+        "actions": [
+          {
+            "label": "Continue · 2 selected",
+            "to": "M18",
+            "secondary": false
+          }
+        ],
+        "back": "M15"
+      },
+      {
+        "id": "M17",
+        "title": "Product presentation",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Hadensa\nProduct overview",
+            "body": "Approved head-office presentation · October edition",
+            "icon": "package",
+            "bg": "navy"
+          },
+          {
+            "kind": "status",
+            "label": "Slide 1 of 4",
+            "tone": "Brand"
+          },
+          {
+            "kind": "heading",
+            "text": "Product information"
+          },
+          {
+            "kind": "text",
+            "text": "Explore the approved product overview, pack information and availability materials.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "row",
+            "title": "Product overview",
+            "sub": "Company-approved detail slide",
+            "to": "M16",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Next slide",
+            "sub": "Product availability and pack information",
+            "to": "M17",
+            "right": null
+          },
+          {
+            "kind": "notice",
+            "title": "Session recorded",
+            "body": "Time and products viewed can be attached to the visit.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Finish detailing",
+            "to": "M18",
+            "secondary": false
+          }
+        ],
+        "back": "M16"
+      },
+      {
+        "id": "M18",
+        "title": "Samples & business",
+        "blocks": [
+          {
+            "kind": "contact",
+            "title": "Dr. Alka Jain",
+            "sub": "Visit · 22 Oct 2026",
+            "hint": "Products detailed · 2",
+            "to": "M14"
+          },
+          {
+            "kind": "row",
+            "title": "Samples",
+            "sub": "Demo sample · 2 units",
+            "to": "M19",
+            "right": "Edit"
+          },
+          {
+            "kind": "row",
+            "title": "Personal order booking",
+            "sub": "5 products · ₹3,161.08",
+            "to": "M20",
+            "right": "Edit"
+          },
+          {
+            "kind": "row",
+            "title": "Promotional inputs",
+            "sub": "No inputs selected",
+            "to": "M21",
+            "right": "Add"
+          },
+          {
+            "kind": "check",
+            "label": "No additional samples or inputs",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "field",
+            "label": "Follow-up remark",
+            "value": "Revisit next month.",
+            "state": "Default"
+          }
+        ],
+        "subtitle": "Step 3 of 3 · Samples, POB & inputs",
+        "actions": [
+          {
+            "label": "Review visit",
+            "to": "M27",
+            "secondary": false
+          }
+        ],
+        "back": "M16"
+      },
+      {
+        "id": "M19",
+        "title": "Add samples",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search assigned sample stock"
+          },
+          {
+            "kind": "product",
+            "title": "Demo sample",
+            "sub": "Available: 24 units",
+            "value": "− 2 +",
+            "to": "M19"
+          },
+          {
+            "kind": "field",
+            "label": "Quantity issued *",
+            "value": "2",
+            "state": "Default"
+          },
+          {
+            "kind": "kv",
+            "label": "Remaining stock",
+            "value": "22 units"
+          },
+          {
+            "kind": "field",
+            "label": "Batch / lot",
+            "value": "DEMO-OCT26",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Stock check",
+            "body": "Issued quantity cannot exceed your available allocation.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "check",
+            "label": "No samples given",
+            "selected": false,
+            "to": null
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save samples",
+            "to": "M18",
+            "secondary": false
+          }
+        ],
+        "back": "M18"
+      },
+      {
+        "id": "M20",
+        "title": "Personal order booking",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search products"
+          },
+          {
+            "kind": "product",
+            "title": "Curity Capsules",
+            "sub": "28 × ₹30.00",
+            "value": "28",
+            "to": "M20"
+          },
+          {
+            "kind": "product",
+            "title": "DolTadafil 20 mg",
+            "sub": "8 × ₹52.50",
+            "value": "8",
+            "to": "M20"
+          },
+          {
+            "kind": "product",
+            "title": "Face to Face 10 GM",
+            "sub": "8 × ₹45.00",
+            "value": "8",
+            "to": "M20"
+          },
+          {
+            "kind": "product",
+            "title": "Hadensa Capsules",
+            "sub": "50 × ₹20.00",
+            "value": "50",
+            "to": "M20"
+          },
+          {
+            "kind": "product",
+            "title": "Hadensa Ointment",
+            "sub": "58 × ₹9.329",
+            "value": "58",
+            "to": "M20"
+          },
+          {
+            "kind": "kv",
+            "label": "Order value",
+            "value": "₹3,161.08"
+          },
+          {
+            "kind": "field",
+            "label": "Fulfilment stockist",
+            "value": "Delhi Pharma Distributors",
+            "state": "Default"
+          },
+          {
+            "kind": "text",
+            "text": "Prices and availability follow your assigned stockist.",
+            "style": "Small",
+            "color": "muted"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save order",
+            "to": "M18",
+            "secondary": false
+          }
+        ],
+        "back": "M18"
+      },
+      {
+        "id": "M21",
+        "title": "Promotional inputs",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Record gifts and promotional materials issued.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "check",
+            "label": "Patient information leaflet · 5",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Clinic planner · 1",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "field",
+            "label": "Input quantity *",
+            "value": "5",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Purpose / remarks",
+            "value": "Clinic information material",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Company policy",
+            "body": "Available inputs and limits are configured by head office.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save inputs",
+            "to": "M18",
+            "secondary": false
+          }
+        ],
+        "back": "M18"
+      },
+      {
+        "id": "M22",
+        "title": "Set a call reminder",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Customer type *",
+            "value": "Doctor",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Doctor *",
+            "value": "Dr. Alka Jain",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Reminder date *",
+            "value": "22 Oct 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Time *",
+            "value": "4:00 PM",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Reminder remark *",
+            "value": "Call to confirm next visit.",
+            "state": "Default"
+          },
+          {
+            "kind": "check",
+            "label": "Notify me before the reminder",
+            "selected": true,
+            "to": null
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save reminder",
+            "to": "M12",
+            "secondary": false
+          }
+        ],
+        "back": "M14"
+      },
+      {
+        "id": "M23",
+        "title": "Chemist visits",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search chemists"
+          },
+          {
+            "kind": "tabs",
+            "items": [
+              "Planned",
+              "All",
+              "Completed"
+            ]
+          },
+          {
+            "kind": "contact",
+            "title": "A Plus Pharmacy",
+            "sub": "Chemist · Dyalpur",
+            "hint": "Planned · 12:30 PM",
+            "to": "M24"
+          },
+          {
+            "kind": "contact",
+            "title": "City Medical Store",
+            "sub": "Chemist · Geeta Colony",
+            "hint": "Planned · 2:00 PM",
+            "to": "M24"
+          },
+          {
+            "kind": "row",
+            "title": "Chemist reminder call",
+            "sub": "Schedule a follow-up",
+            "to": "M22",
+            "right": null
+          }
+        ],
+        "nav": "Calls",
+        "back": "M13"
+      },
+      {
+        "id": "M24",
+        "title": "Record chemist call",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Chemist *",
+            "value": "A Plus Pharmacy",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Call outcome *",
+            "value": "Met in person",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Work with",
+            "value": "Anirudh Kumar",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Visit remarks",
+            "value": "Confirmed stock availability.",
+            "state": "Default"
+          },
+          {
+            "kind": "row",
+            "title": "POB products",
+            "sub": "4 products · ₹6,761.06",
+            "to": "M20",
+            "right": "Edit"
+          },
+          {
+            "kind": "row",
+            "title": "Samples & inputs",
+            "sub": "Add issued materials",
+            "to": "M19",
+            "right": "Add"
+          },
+          {
+            "kind": "button",
+            "label": "Capture RCPA",
+            "to": "M26",
+            "secondary": true
+          },
+          {
+            "kind": "status",
+            "label": "Location captured",
+            "tone": "Success"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save chemist call",
+            "to": "M27",
+            "secondary": false
+          }
+        ],
+        "back": "M23"
+      },
+      {
+        "id": "M25",
+        "title": "Other customer call",
+        "blocks": [
+          {
+            "kind": "tabs",
+            "items": [
+              "Hospital",
+              "Stockist",
+              "Customer"
+            ]
+          },
+          {
+            "kind": "field",
+            "label": "Customer *",
+            "value": "Delhi Pharma Distributors",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Contact person",
+            "value": "Rahul Mehta",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Call outcome *",
+            "value": "Met in person",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Work with",
+            "value": "Anirudh Kumar",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Visit remarks *",
+            "value": "Reviewed supply and pending requirements.",
+            "state": "Default"
+          },
+          {
+            "kind": "row",
+            "title": "Products / POB",
+            "sub": "Add an order",
+            "to": "M20",
+            "right": null
+          },
+          {
+            "kind": "status",
+            "label": "Location captured",
+            "tone": "Success"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save customer call",
+            "to": "M27",
+            "secondary": false
+          }
+        ],
+        "back": "M13"
+      },
+      {
+        "id": "M26",
+        "title": "RCPA call",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "Retail chemist prescription audit",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "field",
+            "label": "Chemist *",
+            "value": "A Plus Pharmacy",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Linked doctor *",
+            "value": "Dr. Alka Jain",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Our product *",
+            "value": "Hadensa Capsules",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Our quantity *",
+            "value": "24",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Competitor product",
+            "value": "Brand comparison",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Competitor quantity",
+            "value": "18",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Observation",
+            "value": "Availability discussed with chemist.",
+            "state": "Default"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save RCPA",
+            "to": "M24",
+            "secondary": false
+          }
+        ],
+        "back": "M24"
+      },
+      {
+        "id": "M27",
+        "title": "Visit recorded",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "A complete visit,\nsafely captured.",
+            "body": "Your call is saved and ready for the daily report.",
+            "icon": "check-check",
+            "bg": "soft"
+          },
+          {
+            "kind": "kv",
+            "label": "Doctor",
+            "value": "Dr. Alka Jain"
+          },
+          {
+            "kind": "kv",
+            "label": "Call outcome",
+            "value": "Met"
+          },
+          {
+            "kind": "kv",
+            "label": "Detailed products",
+            "value": "2"
+          },
+          {
+            "kind": "kv",
+            "label": "Samples",
+            "value": "2 units"
+          },
+          {
+            "kind": "kv",
+            "label": "POB value",
+            "value": "₹3,161.08"
+          },
+          {
+            "kind": "kv",
+            "label": "Check-in / out",
+            "value": "11:03 – 11:18"
+          },
+          {
+            "kind": "status",
+            "label": "Synced",
+            "tone": "Success"
+          },
+          {
+            "kind": "button",
+            "label": "Next planned visit",
+            "to": "M13",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Daily report",
+            "to": "M28",
+            "secondary": false
+          }
+        ],
+        "back": "M13"
+      },
+      {
+        "id": "M28",
+        "title": "Daily call report",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "Draft · 22 Oct 2026",
+            "tone": "Neutral"
+          },
+          {
+            "kind": "kv",
+            "label": "Day plan",
+            "value": "Delhi to Delhi"
+          },
+          {
+            "kind": "row",
+            "title": "Doctor calls",
+            "sub": "1 visit · POB ₹3,161.08",
+            "to": "M27",
+            "right": "1"
+          },
+          {
+            "kind": "row",
+            "title": "Chemist calls",
+            "sub": "1 visit · POB ₹6,761.06",
+            "to": "M24",
+            "right": "1"
+          },
+          {
+            "kind": "row",
+            "title": "Other customer calls",
+            "sub": "Hospital, stockist and customer",
+            "to": "M25",
+            "right": "0"
+          },
+          {
+            "kind": "row",
+            "title": "Reminder calls",
+            "sub": "Doctor 1 · Chemist 0",
+            "to": "M22",
+            "right": "1"
+          },
+          {
+            "kind": "row",
+            "title": "RCPA calls",
+            "sub": "No entries today",
+            "to": "M26",
+            "right": "0"
+          },
+          {
+            "kind": "row",
+            "title": "Expenses",
+            "sub": "DA ₹250 · Other ₹200",
+            "to": "M46",
+            "right": "₹450"
+          },
+          {
+            "kind": "field",
+            "label": "Final day remark *",
+            "value": "Completed planned coverage for today.",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Review before submitting",
+            "body": "Your manager will review the report. Later changes require a correction request.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Submit daily report",
+            "to": "M73",
+            "secondary": false
+          }
+        ],
+        "back": "M11"
+      },
+      {
+        "id": "M29",
+        "title": "Daily report submitted",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Your work is\nready for review.",
+            "body": "DCR-20261022-1182 has been sent to your manager.",
+            "icon": "send",
+            "bg": "soft"
+          },
+          {
+            "kind": "status",
+            "label": "Pending approval",
+            "tone": "Warning"
+          },
+          {
+            "kind": "kv",
+            "label": "Submitted",
+            "value": "22 Oct · 6:15 PM"
+          },
+          {
+            "kind": "kv",
+            "label": "Visits captured",
+            "value": "2"
+          },
+          {
+            "kind": "kv",
+            "label": "POB total",
+            "value": "₹9,922.14"
+          },
+          {
+            "kind": "kv",
+            "label": "Expense total",
+            "value": "₹450.00"
+          },
+          {
+            "kind": "row",
+            "title": "Next step",
+            "sub": "Manager review and approval",
+            "to": "M60",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "View submission history",
+            "to": "M58",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Back to today",
+            "to": "M11",
+            "secondary": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": {
+      "name": "03 / Customer masters & territory planning",
+      "y": 8232,
+      "caption": "Customer records, areas, routes, allowances, route links, tour plans and campaigns."
+    },
+    "screens": [
+      {
+        "id": "M30",
+        "title": "Your workspace",
+        "blocks": [
+          {
+            "kind": "contact",
+            "title": "Aman Sharma",
+            "sub": "Sales Officer · MR-001182",
+            "hint": "Delhi HQ · Pharma division",
+            "to": "M62"
+          },
+          {
+            "kind": "row",
+            "title": "Doctors & chemists",
+            "sub": "Manage customer records",
+            "to": "M31",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Routes & areas",
+            "sub": "Assigned routes and route links",
+            "to": "M38",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Tour plans",
+            "sub": "Calendar and approvals",
+            "to": "M41",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Campaigns & sponsorship",
+            "sub": "Doctor selection and requests",
+            "to": "M45",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Transactions",
+            "sub": "Sales and challan acknowledgements",
+            "to": "M51",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Leave & expenses",
+            "sub": "Requests and statements",
+            "to": "M49",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Sync & account",
+            "sub": "Data, language and support",
+            "to": "M62",
+            "right": null
+          }
+        ],
+        "nav": "More"
+      },
+      {
+        "id": "M31",
+        "title": "Customer master",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search by name or area"
+          },
+          {
+            "kind": "tabs",
+            "items": [
+              "Doctors",
+              "Chemists",
+              "Stockists"
+            ]
+          },
+          {
+            "kind": "contact",
+            "title": "Dr. Anurag Gupta",
+            "sub": "Ayurvedic · Krishna Nagar · A",
+            "hint": "Delhi to Delhi",
+            "to": "M34"
+          },
+          {
+            "kind": "contact",
+            "title": "Dr. Alka Jain",
+            "sub": "Gynaecologist · Dyalpur · A+",
+            "hint": "2 visits per month",
+            "to": "M34"
+          },
+          {
+            "kind": "button",
+            "label": "Add doctor",
+            "to": "M32",
+            "secondary": false
+          },
+          {
+            "kind": "button",
+            "label": "Add chemist",
+            "to": "M36",
+            "secondary": true
+          },
+          {
+            "kind": "button",
+            "label": "Add HQ area",
+            "to": "M37",
+            "secondary": true
+          }
+        ],
+        "nav": "More",
+        "back": "M30"
+      },
+      {
+        "id": "M32",
+        "title": "Add doctor",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Doctor name *",
+            "value": "Dr. Neha Kapoor",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Speciality *",
+            "value": "General physician",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Category",
+            "value": "Core doctor",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Qualification *",
+            "value": "MBBS",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Class *",
+            "value": "A+",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Visit frequency *",
+            "value": "2 per month",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Mobile *",
+            "value": "98765 43210",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Gender *",
+            "value": "Female",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Route *",
+            "value": "Delhi to Mayur Vihar",
+            "state": "Default"
+          }
+        ],
+        "subtitle": "Step 1 of 2 · Professional details",
+        "actions": [
+          {
+            "label": "Next: addresses",
+            "to": "M33",
+            "secondary": false
+          }
+        ],
+        "back": "M31"
+      },
+      {
+        "id": "M33",
+        "title": "Doctor addresses",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "HQ / area *",
+            "value": "Delhi · Mayur Vihar",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "State *",
+            "value": "Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "heading",
+            "text": "Residence address"
+          },
+          {
+            "kind": "field",
+            "label": "Address line 1 *",
+            "value": "24, Sector 1",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Address lines 2 / 3",
+            "value": "Mayur Vihar, Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "PIN code *",
+            "value": "110091",
+            "state": "Default"
+          },
+          {
+            "kind": "heading",
+            "text": "Clinic / hospital address"
+          },
+          {
+            "kind": "check",
+            "label": "Use residence address",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "field",
+            "label": "Clinic address *",
+            "value": "12, Market Road, Mayur Vihar",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Clinic PIN code *",
+            "value": "110091",
+            "state": "Default"
+          }
+        ],
+        "subtitle": "Step 2 of 2 · Location details",
+        "actions": [
+          {
+            "label": "Save doctor",
+            "to": "M34",
+            "secondary": false
+          }
+        ],
+        "back": "M32"
+      },
+      {
+        "id": "M34",
+        "title": "Doctor master detail",
+        "blocks": [
+          {
+            "kind": "contact",
+            "title": "Dr. Neha Kapoor",
+            "sub": "General physician · MBBS · A+",
+            "hint": "Active · Delhi to Mayur Vihar",
+            "to": "M14"
+          },
+          {
+            "kind": "kv",
+            "label": "Visit frequency",
+            "value": "2 per month"
+          },
+          {
+            "kind": "kv",
+            "label": "Mobile",
+            "value": "98765 43210"
+          },
+          {
+            "kind": "kv",
+            "label": "Area",
+            "value": "Mayur Vihar"
+          },
+          {
+            "kind": "kv",
+            "label": "Clinic PIN",
+            "value": "110091"
+          },
+          {
+            "kind": "row",
+            "title": "Edit professional details",
+            "sub": "Speciality, class, route and contact",
+            "to": "M32",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Edit addresses",
+            "sub": "Residence and clinic",
+            "to": "M33",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Route assignments",
+            "sub": "View or update route links",
+            "to": "M43",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "Delete doctor",
+            "to": "M35",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Back to master",
+            "to": "M31",
+            "secondary": false
+          }
+        ],
+        "back": "M31"
+      },
+      {
+        "id": "M35",
+        "title": "Remove customer",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Remove this\ncustomer record?",
+            "body": "Dr. Neha Kapoor · General physician",
+            "icon": "triangle-alert",
+            "bg": "soft"
+          },
+          {
+            "kind": "text",
+            "text": "The record will be archived for review. Existing visit history is retained in reports.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "field",
+            "label": "Reason *",
+            "value": "Duplicate record",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Manager review",
+            "body": "Archive behavior and approval rules follow company settings.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Confirm removal",
+            "to": "M31",
+            "secondary": false
+          },
+          {
+            "label": "Keep record",
+            "to": "M34",
+            "secondary": true
+          }
+        ],
+        "back": "M34"
+      },
+      {
+        "id": "M36",
+        "title": "Add chemist",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Chemist name *",
+            "value": "City Medical Store",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Owner / contact *",
+            "value": "Rahul Mehta",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Mobile *",
+            "value": "98765 43211",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Route *",
+            "value": "Delhi to Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Area *",
+            "value": "Geeta Colony",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "State *",
+            "value": "Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Address *",
+            "value": "16, Market Road, Geeta Colony",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "PIN code *",
+            "value": "110031",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Visit frequency *",
+            "value": "2 per month",
+            "state": "Default"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save chemist",
+            "to": "M31",
+            "secondary": false
+          }
+        ],
+        "back": "M31"
+      },
+      {
+        "id": "M37",
+        "title": "Add HQ area",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Head quarter *",
+            "value": "Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Area name *",
+            "value": "Mayur Vihar Phase I",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "City *",
+            "value": "Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "State *",
+            "value": "Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "PIN code",
+            "value": "110091",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Assigned route",
+            "value": "Delhi to Mayur Vihar",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Avoid duplicates",
+            "body": "Search existing HQ areas before adding a new area.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save area",
+            "to": "M31",
+            "secondary": false
+          }
+        ],
+        "back": "M31"
+      },
+      {
+        "id": "M38",
+        "title": "Route master",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Employee",
+            "value": "Aman Sharma · Sales Officer",
+            "state": "Default"
+          },
+          {
+            "kind": "search",
+            "text": "Search assigned routes"
+          },
+          {
+            "kind": "row",
+            "title": "Delhi to Delhi",
+            "sub": "Local · 85 doctors · 341 chemists",
+            "to": "M39",
+            "right": "0 km"
+          },
+          {
+            "kind": "row",
+            "title": "Gurugram to Uttam Nagar",
+            "sub": "Local · 2 visits / month",
+            "to": "M39",
+            "right": "23 km"
+          },
+          {
+            "kind": "row",
+            "title": "Meerut to Bareilly",
+            "sub": "Outstation · 1 visit / month",
+            "to": "M39",
+            "right": "244 km"
+          },
+          {
+            "kind": "button",
+            "label": "Add a new route",
+            "to": "M39",
+            "secondary": false
+          },
+          {
+            "kind": "button",
+            "label": "Link doctors to routes",
+            "to": "M43",
+            "secondary": true
+          },
+          {
+            "kind": "button",
+            "label": "Link chemists to routes",
+            "to": "M44",
+            "secondary": true
+          }
+        ],
+        "nav": "Plan",
+        "back": "M30"
+      },
+      {
+        "id": "M39",
+        "title": "Create route",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "From location *",
+            "value": "Gurgaon Railway Station Parking",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Via 1 / destination *",
+            "value": "Uttam Nagar, Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Via 2",
+            "value": "Add optional stop",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Via 3",
+            "value": "Add optional stop",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Via 4",
+            "value": "Add optional stop",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Via 5",
+            "value": "Add optional stop",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Route name *",
+            "value": "Gurugram to Uttam Nagar",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Description",
+            "value": "Local market coverage",
+            "state": "Default"
+          },
+          {
+            "kind": "map",
+            "title": "Proposed route · 23 km",
+            "h": 180
+          }
+        ],
+        "subtitle": "Step 1 of 2 · Stops & route",
+        "actions": [
+          {
+            "label": "Next: allowances",
+            "to": "M40",
+            "secondary": false
+          }
+        ],
+        "back": "M38"
+      },
+      {
+        "id": "M40",
+        "title": "Route allowances",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "DA type *",
+            "value": "Local",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "One-way distance *",
+            "value": "23 km",
+            "state": "Default"
+          },
+          {
+            "kind": "button",
+            "label": "Calculate distance",
+            "to": "M40",
+            "secondary": true
+          },
+          {
+            "kind": "field",
+            "label": "Visit frequency *",
+            "value": "2 per month",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Additional allowance head",
+            "value": "No additional allowance",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Allowance amount",
+            "value": "₹0.00",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Available DA types",
+            "body": "None, Local, Ex-station, Outstation, Meeting and Training. Fare can be single or double side.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "kv",
+            "label": "Calculated distance",
+            "value": "23 km"
+          }
+        ],
+        "subtitle": "Step 2 of 2 · Distance & frequency",
+        "actions": [
+          {
+            "label": "Save route",
+            "to": "M38",
+            "secondary": false
+          }
+        ],
+        "back": "M39"
+      },
+      {
+        "id": "M41",
+        "title": "Tour plan",
+        "blocks": [
+          {
+            "kind": "tabs",
+            "items": [
+              "October",
+              "November"
+            ]
+          },
+          {
+            "kind": "status",
+            "label": "Approved",
+            "tone": "Success"
+          },
+          {
+            "kind": "text",
+            "text": "NOVEMBER 2026",
+            "style": "Title",
+            "color": "ink"
+          },
+          {
+            "kind": "text",
+            "text": "M      T      W      T      F      S      S\n\n2       3       4       5       6       7       8\n\n9      10     11     12     13     14     15\n\n16    17     18     19     20     21     22\n\n23    24     25     26     27     28     29",
+            "style": "Body",
+            "color": "ink"
+          },
+          {
+            "kind": "row",
+            "title": "02 Nov · Delhi to Delhi",
+            "sub": "Field work · 10 planned calls",
+            "to": "M42",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "03 Nov · Delhi to Gurugram",
+            "sub": "Joint working · Anirudh Kumar",
+            "to": "M42",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "04 Nov · Training",
+            "sub": "Delhi head office",
+            "to": "M42",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "Add / edit tour day",
+            "to": "M42",
+            "secondary": false
+          }
+        ],
+        "subtitle": "Your monthly coverage calendar",
+        "nav": "Plan"
+      },
+      {
+        "id": "M42",
+        "title": "Plan a tour day",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Date *",
+            "value": "02 Nov 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Working type *",
+            "value": "Field work",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Route *",
+            "value": "Delhi to Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "row",
+            "title": "Work with",
+            "sub": "Anirudh Kumar",
+            "to": "M09",
+            "right": null
+          },
+          {
+            "kind": "field",
+            "label": "Expected doctor visits",
+            "value": "8",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Expected chemist visits",
+            "value": "2",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Remarks",
+            "value": "Monthly clinic coverage",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Approval required",
+            "body": "Edits after approval are sent back for manager review.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Submit for approval",
+            "to": "M41",
+            "secondary": false
+          }
+        ],
+        "back": "M41"
+      },
+      {
+        "id": "M43",
+        "title": "Doctor route links",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Employee *",
+            "value": "Aman Sharma",
+            "state": "Default"
+          },
+          {
+            "kind": "tabs",
+            "items": [
+              "Pending",
+              "Done",
+              "All"
+            ]
+          },
+          {
+            "kind": "search",
+            "text": "Search doctor or area"
+          },
+          {
+            "kind": "field",
+            "label": "Route *",
+            "value": "Delhi to Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Area filter",
+            "value": "Dyalpur",
+            "state": "Default"
+          },
+          {
+            "kind": "check",
+            "label": "Dr. Alka Jain · Dyalpur",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Dr. Neha Kapoor · Mayur Vihar",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Dr. Surendra Kumar · Geeta Colony",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "notice",
+            "title": "Area-wise linking",
+            "body": "Apply a route to selected doctors or to the filtered area.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save route links",
+            "to": "M38",
+            "secondary": false
+          }
+        ],
+        "back": "M38"
+      },
+      {
+        "id": "M44",
+        "title": "Chemist route links",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Employee *",
+            "value": "Aman Sharma",
+            "state": "Default"
+          },
+          {
+            "kind": "tabs",
+            "items": [
+              "Pending",
+              "Done",
+              "All"
+            ]
+          },
+          {
+            "kind": "search",
+            "text": "Search chemist or area"
+          },
+          {
+            "kind": "field",
+            "label": "Route *",
+            "value": "Delhi to Delhi",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Area filter",
+            "value": "Geeta Colony",
+            "state": "Default"
+          },
+          {
+            "kind": "check",
+            "label": "City Medical Store · Geeta Colony",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "A Plus Pharmacy · Dyalpur",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Care Pharmacy · Mayur Vihar",
+            "selected": false,
+            "to": null
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save route links",
+            "to": "M38",
+            "secondary": false
+          }
+        ],
+        "back": "M38"
+      },
+      {
+        "id": "M45",
+        "title": "Campaigns",
+        "blocks": [
+          {
+            "kind": "tabs",
+            "items": [
+              "Active",
+              "Upcoming",
+              "Completed"
+            ]
+          },
+          {
+            "kind": "hero",
+            "title": "October focus",
+            "body": "Planned coverage for selected doctors and focus products.",
+            "icon": "target",
+            "bg": "navy"
+          },
+          {
+            "kind": "kv",
+            "label": "Campaign period",
+            "value": "01–31 Oct"
+          },
+          {
+            "kind": "kv",
+            "label": "Assigned doctors",
+            "value": "24"
+          },
+          {
+            "kind": "kv",
+            "label": "Completed calls",
+            "value": "18 / 24"
+          },
+          {
+            "kind": "button",
+            "label": "Choose campaign doctors",
+            "to": "M57",
+            "secondary": false
+          },
+          {
+            "kind": "button",
+            "label": "Request sponsorship",
+            "to": "M56",
+            "secondary": true
+          }
+        ],
+        "nav": "More",
+        "back": "M30"
+      }
+    ]
+  },
+  {
+    "group": {
+      "name": "04 / Transactions, reports & your workspace",
+      "y": 12328,
+      "caption": "Expenses, leave, sales, stock, challans, sponsorship, reporting, sync and language."
+    },
+    "screens": [
+      {
+        "id": "M46",
+        "title": "Today’s expenses",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "Draft · 22 Oct",
+            "tone": "Neutral"
+          },
+          {
+            "kind": "kv",
+            "label": "Route",
+            "value": "Delhi to Delhi"
+          },
+          {
+            "kind": "kv",
+            "label": "DA · Local",
+            "value": "₹250.00"
+          },
+          {
+            "kind": "kv",
+            "label": "TA · 0 km × rate",
+            "value": "₹0.00"
+          },
+          {
+            "kind": "row",
+            "title": "Miscellaneous expense",
+            "sub": "Receipt attached · Client visit",
+            "to": "M47",
+            "right": "₹200"
+          },
+          {
+            "kind": "divider"
+          },
+          {
+            "kind": "kv",
+            "label": "Total claimed",
+            "value": "₹450.00"
+          },
+          {
+            "kind": "button",
+            "label": "Add another expense",
+            "to": "M47",
+            "secondary": true
+          },
+          {
+            "kind": "notice",
+            "title": "Calculated by policy",
+            "body": "DA and TA use your route type, eligible distance and company allowance settings.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "button",
+            "label": "View expense statement",
+            "to": "M48",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save to daily report",
+            "to": "M28",
+            "secondary": false
+          }
+        ],
+        "back": "M11"
+      },
+      {
+        "id": "M47",
+        "title": "Add expense",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Expense head *",
+            "value": "Miscellaneous expense",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Amount *",
+            "value": "₹200.00",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Expense date *",
+            "value": "22 Oct 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Remarks *",
+            "value": "Local conveyance for clinic visits",
+            "state": "Default"
+          },
+          {
+            "kind": "hero",
+            "title": "Receipt attached",
+            "body": "receipt-22oct.jpg · 284 KB",
+            "icon": "camera",
+            "bg": "soft"
+          },
+          {
+            "kind": "button",
+            "label": "Replace receipt",
+            "to": "M47",
+            "secondary": true
+          },
+          {
+            "kind": "notice",
+            "title": "Receipt requirements",
+            "body": "Allowed file types and value thresholds follow your company policy.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save expense",
+            "to": "M46",
+            "secondary": false
+          }
+        ],
+        "back": "M46"
+      },
+      {
+        "id": "M48",
+        "title": "Expense statement",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Period",
+            "value": "October 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "metrics",
+            "items": [
+              [
+                "Submitted",
+                "₹8,450",
+                "18 claims"
+              ],
+              [
+                "Approved",
+                "₹7,200",
+                "16 claims"
+              ]
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "22 Oct · EXP-0241",
+            "sub": "Local DA and miscellaneous",
+            "to": "M75",
+            "right": "₹450"
+          },
+          {
+            "kind": "row",
+            "title": "21 Oct · EXP-0238",
+            "sub": "Pending manager review",
+            "to": "M46",
+            "right": "₹600"
+          },
+          {
+            "kind": "row",
+            "title": "20 Oct · EXP-0235",
+            "sub": "Returned · Add receipt",
+            "to": "M47",
+            "right": "₹650"
+          },
+          {
+            "kind": "button",
+            "label": "Export statement",
+            "to": "M48",
+            "secondary": true
+          }
+        ],
+        "nav": "Reports",
+        "back": "M30"
+      },
+      {
+        "id": "M49",
+        "title": "Leave requests",
+        "blocks": [
+          {
+            "kind": "metrics",
+            "items": [
+              [
+                "Available",
+                "8 days",
+                "Casual leave"
+              ],
+              [
+                "Pending",
+                "1",
+                "Awaiting review"
+              ]
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "28–29 Oct · Casual leave",
+            "sub": "2 days · Pending approval",
+            "to": "M50",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "12 Oct · Sick leave",
+            "sub": "1 day · Approved",
+            "to": "M50",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "Request leave",
+            "to": "M50",
+            "secondary": false
+          }
+        ],
+        "nav": "More",
+        "back": "M30"
+      },
+      {
+        "id": "M50",
+        "title": "Request leave",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Leave type *",
+            "value": "Casual leave",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "From date *",
+            "value": "28 Oct 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "To date *",
+            "value": "29 Oct 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Duration",
+            "value": "2 full days",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Reason *",
+            "value": "Personal commitment",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Attachment",
+            "value": "Optional supporting document",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Coverage handover",
+            "body": "Your tour plan and pending calls remain visible to your manager.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Send leave request",
+            "to": "M49",
+            "secondary": false
+          }
+        ],
+        "back": "M49"
+      },
+      {
+        "id": "M51",
+        "title": "Secondary sales",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Month *",
+            "value": "October 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Stockist *",
+            "value": "Delhi Pharma Distributors",
+            "state": "Default"
+          },
+          {
+            "kind": "product",
+            "title": "Curity Capsules",
+            "sub": "Opening 120 · Receipts 80",
+            "value": "96",
+            "to": "M51"
+          },
+          {
+            "kind": "product",
+            "title": "Hadensa Capsules",
+            "sub": "Opening 200 · Receipts 100",
+            "value": "142",
+            "to": "M51"
+          },
+          {
+            "kind": "field",
+            "label": "Closing stock",
+            "value": "Calculated from opening, receipts and sales",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Remarks",
+            "value": "Stockist statement received",
+            "state": "Default"
+          },
+          {
+            "kind": "button",
+            "label": "Attach stockist statement",
+            "to": "M55",
+            "secondary": true
+          }
+        ],
+        "subtitle": "Stockist sales & closing inventory",
+        "actions": [
+          {
+            "label": "Submit sales",
+            "to": "M55",
+            "secondary": false
+          }
+        ],
+        "back": "M30"
+      },
+      {
+        "id": "M52",
+        "title": "Doctor-wise sales",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Month *",
+            "value": "October 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Doctor *",
+            "value": "Dr. Alka Jain",
+            "state": "Default"
+          },
+          {
+            "kind": "product",
+            "title": "Hadensa Capsules",
+            "sub": "Reported units",
+            "value": "40",
+            "to": "M52"
+          },
+          {
+            "kind": "product",
+            "title": "Face to Face 10 GM",
+            "sub": "Reported units",
+            "value": "16",
+            "to": "M52"
+          },
+          {
+            "kind": "field",
+            "label": "Linked chemist",
+            "value": "A Plus Pharmacy",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Remarks",
+            "value": "Monthly doctor-linked sale estimate",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Reporting context",
+            "body": "Doctor-linked figures are entered as field estimates, separate from invoiced sales.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save doctor sales",
+            "to": "M58",
+            "secondary": false
+          }
+        ],
+        "back": "M14"
+      },
+      {
+        "id": "M53",
+        "title": "Challan receipts",
+        "blocks": [
+          {
+            "kind": "tabs",
+            "items": [
+              "Pending",
+              "Acknowledged"
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "CH-2026-0184",
+            "sub": "Dispatched 20 Oct · 3 sample lines",
+            "to": "M54",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "CH-2026-0171",
+            "sub": "Dispatched 14 Oct · 2 input lines",
+            "to": "M54",
+            "right": null
+          },
+          {
+            "kind": "notice",
+            "title": "Confirm physical receipt",
+            "body": "Acknowledge received quantities and record any shortage.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "nav": "More",
+        "back": "M30"
+      },
+      {
+        "id": "M54",
+        "title": "Acknowledge challan",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "Pending receipt",
+            "tone": "Warning"
+          },
+          {
+            "kind": "kv",
+            "label": "Challan",
+            "value": "CH-2026-0184"
+          },
+          {
+            "kind": "kv",
+            "label": "Dispatch date",
+            "value": "20 Oct 2026"
+          },
+          {
+            "kind": "field",
+            "label": "Demo sample · Sent 24",
+            "value": "Received: 24",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Clinic leaflet · Sent 50",
+            "value": "Received: 45",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Clinic planner · Sent 10",
+            "value": "Received: 10",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Shortage / damage remark",
+            "value": "5 leaflets missing",
+            "state": "Default"
+          },
+          {
+            "kind": "check",
+            "label": "I have checked the physical quantities",
+            "selected": true,
+            "to": null
+          }
+        ],
+        "actions": [
+          {
+            "label": "Confirm receipt",
+            "to": "M53",
+            "secondary": false
+          }
+        ],
+        "back": "M53"
+      },
+      {
+        "id": "M55",
+        "title": "Stock & sales",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Period",
+            "value": "October 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Stockist",
+            "value": "Delhi Pharma Distributors",
+            "state": "Default"
+          },
+          {
+            "kind": "metrics",
+            "items": [
+              [
+                "Sales units",
+                "238",
+                "This month"
+              ],
+              [
+                "Closing stock",
+                "162",
+                "At stockist"
+              ]
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "Secondary sales statement",
+            "sub": "Received · 22 Oct",
+            "to": "M51",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Personal sample stock",
+            "sub": "24 received · 2 issued · 22 left",
+            "to": "M19",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Pending challans",
+            "sub": "2 need acknowledgement",
+            "to": "M53",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "Download statement",
+            "to": "M55",
+            "secondary": true
+          }
+        ],
+        "nav": "Reports",
+        "back": "M30"
+      },
+      {
+        "id": "M56",
+        "title": "Sponsorship request",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Doctor *",
+            "value": "Dr. Alka Jain",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Activity / event *",
+            "value": "Clinic education event",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Event date *",
+            "value": "12 Nov 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Requested support *",
+            "value": "₹5,000.00",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Business purpose *",
+            "value": "Approved educational activity",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Supporting document",
+            "value": "event-request.pdf",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Approval workflow",
+            "body": "Sponsorship requests require review under company policy.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Send request",
+            "to": "M45",
+            "secondary": false
+          }
+        ],
+        "back": "M45"
+      },
+      {
+        "id": "M57",
+        "title": "Campaign doctors",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Campaign",
+            "value": "October focus",
+            "state": "Default"
+          },
+          {
+            "kind": "search",
+            "text": "Search eligible doctors"
+          },
+          {
+            "kind": "check",
+            "label": "Dr. Alka Jain · A+ · Dyalpur",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Dr. Surendra Kumar · A · Geeta Colony",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "check",
+            "label": "Dr. Anurag Gupta · A · Krishna Nagar",
+            "selected": false,
+            "to": null
+          },
+          {
+            "kind": "heading",
+            "text": "Focus products"
+          },
+          {
+            "kind": "product",
+            "title": "Hadensa Capsules",
+            "sub": "Company-approved campaign brief",
+            "value": "View",
+            "to": "M17"
+          },
+          {
+            "kind": "notice",
+            "title": "Coverage goal",
+            "body": "Complete one focus call for each selected doctor.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Save selection",
+            "to": "M45",
+            "secondary": false
+          }
+        ],
+        "back": "M45"
+      },
+      {
+        "id": "M58",
+        "title": "Reports",
+        "blocks": [
+          {
+            "kind": "row",
+            "title": "My activity",
+            "sub": "Calls, working days and coverage",
+            "to": "M59",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Daily call reports",
+            "sub": "Submission and approval status",
+            "to": "M28",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Missed doctor calls",
+            "sub": "Planned calls still pending",
+            "to": "M60",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Expense statement",
+            "sub": "Submitted, approved and returned",
+            "to": "M48",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Stock & sales",
+            "sub": "Secondary sales and personal stock",
+            "to": "M55",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Doctor-wise products",
+            "sub": "Product reach and doctor-linked sales",
+            "to": "M52",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Tour plan deviations",
+            "sub": "Planned and actual route comparison",
+            "to": "M59",
+            "right": null
+          }
+        ],
+        "nav": "Reports"
+      },
+      {
+        "id": "M59",
+        "title": "My performance",
+        "blocks": [
+          {
+            "kind": "field",
+            "label": "Period",
+            "value": "October 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "metrics",
+            "items": [
+              [
+                "Doctor calls",
+                "128",
+                "↑ 12% this month"
+              ],
+              [
+                "Coverage",
+                "86%",
+                "Target: 90%"
+              ]
+            ]
+          },
+          {
+            "kind": "chart"
+          },
+          {
+            "kind": "kv",
+            "label": "Chemist calls",
+            "value": "64"
+          },
+          {
+            "kind": "kv",
+            "label": "Joint working days",
+            "value": "6"
+          },
+          {
+            "kind": "kv",
+            "label": "Missed planned calls",
+            "value": "12"
+          },
+          {
+            "kind": "kv",
+            "label": "Route deviations",
+            "value": "2"
+          },
+          {
+            "kind": "row",
+            "title": "Review pending visits",
+            "sub": "Catch up on missed coverage",
+            "to": "M60",
+            "right": null
+          }
+        ],
+        "nav": "Reports",
+        "back": "M58"
+      },
+      {
+        "id": "M60",
+        "title": "Pending tasks",
+        "blocks": [
+          {
+            "kind": "tabs",
+            "items": [
+              "Reporting",
+              "Visits",
+              "Approvals"
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "21 Oct · DCR returned",
+            "sub": "Add missing visit remarks",
+            "to": "M74",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "20 Oct · DCR pending",
+            "sub": "Complete and submit your report",
+            "to": "M76",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Dr. Surendra Kumar",
+            "sub": "Overdue planned visit · Geeta Colony",
+            "to": "M14",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "CH-2026-0184",
+            "sub": "Acknowledge sample receipt",
+            "to": "M54",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "22 Oct · Expenses",
+            "sub": "Approved ₹450 · View details",
+            "to": "M75",
+            "right": null
+          }
+        ],
+        "nav": "More",
+        "back": "M11"
+      },
+      {
+        "id": "M61",
+        "title": "Sync center",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "All changes synced",
+            "tone": "Success"
+          },
+          {
+            "kind": "kv",
+            "label": "Last successful sync",
+            "value": "Today, 6:16 PM"
+          },
+          {
+            "kind": "kv",
+            "label": "Pending uploads",
+            "value": "0"
+          },
+          {
+            "kind": "kv",
+            "label": "Master data version",
+            "value": "22 Oct · 9:00 AM"
+          },
+          {
+            "kind": "row",
+            "title": "Upload queue",
+            "sub": "Calls, expenses and reports",
+            "to": "M65",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Conflict resolution",
+            "sub": "Review a conflicting draft",
+            "to": "M72",
+            "right": null
+          },
+          {
+            "kind": "notice",
+            "title": "Keep your data current",
+            "body": "Changes saved offline upload when a connection is available.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Sync now",
+            "to": "M61",
+            "secondary": false
+          }
+        ],
+        "back": "M62"
+      },
+      {
+        "id": "M62",
+        "title": "Account & settings",
+        "blocks": [
+          {
+            "kind": "contact",
+            "title": "Aman Sharma",
+            "sub": "Sales Officer · MR-001182",
+            "hint": "Delhi HQ · Pharma division",
+            "to": "M62"
+          },
+          {
+            "kind": "row",
+            "title": "Language",
+            "sub": "English",
+            "to": "M63",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Sync & offline data",
+            "sub": "All changes synced",
+            "to": "M61",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Location permission",
+            "sub": "Precise location enabled",
+            "to": "M05",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Change PIN",
+            "sub": "Update your secure access PIN",
+            "to": "M04",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Help & support",
+            "sub": "Contact head office",
+            "to": "M64",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Privacy & tracking",
+            "sub": "Company working-day tracking policy",
+            "to": "M05",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "Sign out",
+            "to": "M02",
+            "secondary": true
+          }
+        ],
+        "nav": "More",
+        "back": "M30"
+      },
+      {
+        "id": "M63",
+        "title": "आपका कार्यदिवस",
+        "blocks": [
+          {
+            "kind": "text",
+            "text": "गुरुवार, 22 अक्टूबर 2026",
+            "style": "Small",
+            "color": "muted"
+          },
+          {
+            "kind": "hero",
+            "title": "हर मुलाकात,\nबेहतर संबंध।",
+            "body": "अपनी योजना देखें और दिन की रिपोर्ट पूरी करें।",
+            "icon": "calendar-days",
+            "bg": "navy"
+          },
+          {
+            "kind": "metrics",
+            "items": [
+              [
+                "आज की मुलाकातें",
+                "4 / 10",
+                "6 बाकी हैं"
+              ],
+              [
+                "ऑर्डर मूल्य",
+                "₹9,922",
+                "आज के ऑर्डर"
+              ]
+            ]
+          },
+          {
+            "kind": "row",
+            "title": "अगली मुलाकात",
+            "sub": "डॉ. अलका जैन · सुबह 11:00 बजे",
+            "to": "M14",
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "दैनिक रिपोर्ट देखें",
+            "to": "M28",
+            "secondary": false
+          },
+          {
+            "kind": "button",
+            "label": "Switch to English",
+            "to": "M62",
+            "secondary": true
+          }
+        ],
+        "subtitle": "दिल्ली मुख्यालय · फार्मा विभाग",
+        "nav": "Today",
+        "back": "M62"
+      },
+      {
+        "id": "M64",
+        "title": "Help & support",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Search help topics"
+          },
+          {
+            "kind": "row",
+            "title": "How to submit a daily report",
+            "sub": "Plan → Calls → Review → Submit",
+            "to": "M28",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Location and verified calls",
+            "sub": "Resolve GPS and permission issues",
+            "to": "M66",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Offline work and sync",
+            "sub": "Saved drafts and upload status",
+            "to": "M61",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Expense and allowance help",
+            "sub": "View company policy",
+            "to": "M46",
+            "right": null
+          },
+          {
+            "kind": "field",
+            "label": "Support category",
+            "value": "Reporting issue",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Message",
+            "value": "Describe the issue for head office",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Head-office support",
+            "body": "Contact details are configured for your company.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Send support request",
+            "to": "M62",
+            "secondary": false
+          }
+        ],
+        "back": "M62"
+      }
+    ]
+  },
+  {
+    "group": {
+      "name": "05 / Complete states & exception flows",
+      "y": 17368,
+      "caption": "Offline work, location failure, validation, permissions, conflicts and review outcomes."
+    },
+    "screens": [
+      {
+        "id": "M65",
+        "title": "You’re offline",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Keep working.\nWe’ll sync later.",
+            "body": "Your changes are saved on this device.",
+            "icon": "wifi-off",
+            "bg": "soft"
+          },
+          {
+            "kind": "status",
+            "label": "3 uploads queued",
+            "tone": "Warning"
+          },
+          {
+            "kind": "row",
+            "title": "Doctor call",
+            "sub": "Dr. Alka Jain · Saved 11:18 AM",
+            "to": "M27",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Expense",
+            "sub": "₹200 · Receipt queued",
+            "to": "M47",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Daily report draft",
+            "sub": "Not yet submitted",
+            "to": "M28",
+            "right": null
+          },
+          {
+            "kind": "notice",
+            "title": "Submission pending",
+            "body": "A report is submitted only after the server confirms the upload.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Retry connection",
+            "to": "M61",
+            "secondary": false
+          },
+          {
+            "label": "Keep working",
+            "to": "M11",
+            "secondary": true
+          }
+        ],
+        "back": "M61"
+      },
+      {
+        "id": "M66",
+        "title": "Location unavailable",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Let’s restore\nyour location.",
+            "body": "Precise location is needed to verify this visit.",
+            "icon": "map-pin",
+            "bg": "soft"
+          },
+          {
+            "kind": "notice",
+            "title": "Check device settings",
+            "body": "Enable location permission and GPS, then try again.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "row",
+            "title": "Permission",
+            "sub": "Precise location disabled",
+            "to": "M05",
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Visit draft",
+            "sub": "Your entered details are saved",
+            "to": "M15",
+            "right": null
+          },
+          {
+            "kind": "text",
+            "text": "If location still fails, request a manager-reviewed exception.",
+            "style": "Small",
+            "color": "muted"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Retry location",
+            "to": "M15",
+            "secondary": false
+          },
+          {
+            "label": "Request review",
+            "to": "M67",
+            "secondary": true
+          }
+        ],
+        "back": "M05"
+      },
+      {
+        "id": "M67",
+        "title": "Visit needs review",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "Outside expected area",
+            "tone": "Warning"
+          },
+          {
+            "kind": "map",
+            "title": "Clinic check-in · Illustrative location",
+            "h": 190
+          },
+          {
+            "kind": "kv",
+            "label": "Distance from clinic",
+            "value": "340 m"
+          },
+          {
+            "kind": "kv",
+            "label": "GPS accuracy",
+            "value": "28 m"
+          },
+          {
+            "kind": "field",
+            "label": "Exception reason *",
+            "value": "Doctor visiting a nearby hospital",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Verification exception",
+            "body": "This call will be flagged for manager review. Radius and override rules are company-configured.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Send for review",
+            "to": "M15",
+            "secondary": false
+          },
+          {
+            "label": "Try again",
+            "to": "M66",
+            "secondary": true
+          }
+        ],
+        "back": "M15"
+      },
+      {
+        "id": "M68",
+        "title": "Complete required fields",
+        "blocks": [
+          {
+            "kind": "notice",
+            "title": "Check the highlighted fields",
+            "body": "Your draft is saved. Add the missing details to continue.",
+            "tone": "Danger",
+            "icon": "triangle-alert"
+          },
+          {
+            "kind": "field",
+            "label": "Doctor name *",
+            "value": "Dr. Neha Kapoor",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Mobile *",
+            "value": "Enter mobile number",
+            "state": "Error"
+          },
+          {
+            "kind": "field",
+            "label": "Visit frequency *",
+            "value": "Select frequency",
+            "state": "Error"
+          },
+          {
+            "kind": "field",
+            "label": "Clinic address *",
+            "value": "Enter clinic address",
+            "state": "Error"
+          },
+          {
+            "kind": "text",
+            "text": "Validation examples for the customer master.",
+            "style": "Small",
+            "color": "muted"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Review & continue",
+            "to": "M32",
+            "secondary": false
+          }
+        ],
+        "back": "M32"
+      },
+      {
+        "id": "M69",
+        "title": "No matching customers",
+        "blocks": [
+          {
+            "kind": "search",
+            "text": "Dr. Vikram"
+          },
+          {
+            "kind": "hero",
+            "title": "No matches yet.",
+            "body": "Try a different name, area or customer type.",
+            "icon": "search",
+            "bg": "soft"
+          },
+          {
+            "kind": "button",
+            "label": "Clear search",
+            "to": "M31",
+            "secondary": true
+          },
+          {
+            "kind": "notice",
+            "title": "Customer not assigned?",
+            "body": "Contact your manager or request a new customer record.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Add customer",
+            "to": "M32",
+            "secondary": false
+          }
+        ],
+        "back": "M31"
+      },
+      {
+        "id": "M70",
+        "title": "Access restricted",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "This action needs\nadditional access.",
+            "body": "Your role does not include customer approval.",
+            "icon": "shield-check",
+            "bg": "soft"
+          },
+          {
+            "kind": "text",
+            "text": "A manager or administrator can review this request. Your current work is saved.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "row",
+            "title": "Current role",
+            "sub": "Sales Officer · Delhi HQ",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "button",
+            "label": "Contact support",
+            "to": "M64",
+            "secondary": true
+          }
+        ],
+        "actions": [
+          {
+            "label": "Return to workspace",
+            "to": "M30",
+            "secondary": false
+          }
+        ],
+        "back": "M30"
+      },
+      {
+        "id": "M71",
+        "title": "Session expired",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Sign in again\nto continue.",
+            "body": "Your saved drafts will be available after sign-in.",
+            "icon": "shield-check",
+            "bg": "soft"
+          },
+          {
+            "kind": "text",
+            "text": "For security, your company session has expired.",
+            "style": "Body",
+            "color": "muted"
+          },
+          {
+            "kind": "kv",
+            "label": "Company",
+            "value": "VIDYA"
+          },
+          {
+            "kind": "kv",
+            "label": "Saved local drafts",
+            "value": "2"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Sign in",
+            "to": "M02",
+            "secondary": false
+          }
+        ]
+      },
+      {
+        "id": "M72",
+        "title": "Resolve sync conflict",
+        "blocks": [
+          {
+            "kind": "notice",
+            "title": "This report changed elsewhere",
+            "body": "Review the newer server version before choosing which draft to keep.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "row",
+            "title": "Your device draft",
+            "sub": "Updated today, 6:12 PM · 2 visits",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "row",
+            "title": "Server version",
+            "sub": "Updated today, 6:14 PM · 3 visits",
+            "to": null,
+            "right": null
+          },
+          {
+            "kind": "field",
+            "label": "Resolution *",
+            "value": "Use server version",
+            "state": "Default"
+          },
+          {
+            "kind": "text",
+            "text": "Choosing a version is recorded in the sync history.",
+            "style": "Small",
+            "color": "muted"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Resolve & sync",
+            "to": "M61",
+            "secondary": false
+          },
+          {
+            "label": "Review report",
+            "to": "M28",
+            "secondary": true
+          }
+        ],
+        "back": "M61"
+      },
+      {
+        "id": "M73",
+        "title": "Submit this report?",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Ready to send\nyour day’s work?",
+            "body": "Review the totals before final submission.",
+            "icon": "file-text",
+            "bg": "soft"
+          },
+          {
+            "kind": "kv",
+            "label": "Report date",
+            "value": "22 Oct 2026"
+          },
+          {
+            "kind": "kv",
+            "label": "Customer visits",
+            "value": "2"
+          },
+          {
+            "kind": "kv",
+            "label": "POB total",
+            "value": "₹9,922.14"
+          },
+          {
+            "kind": "kv",
+            "label": "Expense total",
+            "value": "₹450.00"
+          },
+          {
+            "kind": "check",
+            "label": "I have reviewed the entries",
+            "selected": true,
+            "to": null
+          },
+          {
+            "kind": "notice",
+            "title": "After submission",
+            "body": "Corrections follow your company’s manager-review process.",
+            "tone": "Brand",
+            "icon": "shield-check"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Confirm submit",
+            "to": "M29",
+            "secondary": false
+          },
+          {
+            "label": "Keep editing",
+            "to": "M28",
+            "secondary": true
+          }
+        ],
+        "back": "M28"
+      },
+      {
+        "id": "M74",
+        "title": "Report returned",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "Needs correction",
+            "tone": "Danger"
+          },
+          {
+            "kind": "kv",
+            "label": "Report",
+            "value": "DCR · 21 Oct 2026"
+          },
+          {
+            "kind": "notice",
+            "title": "Manager’s comment",
+            "body": "Please add visit remarks for the Geeta Colony call.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "row",
+            "title": "Doctor call",
+            "sub": "Missing visit remark",
+            "to": "M15",
+            "right": "Edit"
+          },
+          {
+            "kind": "field",
+            "label": "Response to manager",
+            "value": "Added the required visit context.",
+            "state": "Default"
+          },
+          {
+            "kind": "text",
+            "text": "Resubmission retains the original submission history.",
+            "style": "Small",
+            "color": "muted"
+          }
+        ],
+        "actions": [
+          {
+            "label": "Resubmit report",
+            "to": "M29",
+            "secondary": false
+          }
+        ],
+        "back": "M60"
+      },
+      {
+        "id": "M75",
+        "title": "Expense approved",
+        "blocks": [
+          {
+            "kind": "hero",
+            "title": "Your claim\nhas been approved.",
+            "body": "EXP-0241 · 22 October 2026",
+            "icon": "check-check",
+            "bg": "soft"
+          },
+          {
+            "kind": "status",
+            "label": "Approved",
+            "tone": "Success"
+          },
+          {
+            "kind": "kv",
+            "label": "Submitted amount",
+            "value": "₹450.00"
+          },
+          {
+            "kind": "kv",
+            "label": "Approved amount",
+            "value": "₹450.00"
+          },
+          {
+            "kind": "kv",
+            "label": "Approved by",
+            "value": "Anirudh Kumar"
+          },
+          {
+            "kind": "kv",
+            "label": "Approved on",
+            "value": "22 Oct · 10:45 AM"
+          },
+          {
+            "kind": "kv",
+            "label": "Payment status",
+            "value": "Awaiting settlement"
+          },
+          {
+            "kind": "row",
+            "title": "View claim breakdown",
+            "sub": "DA and miscellaneous expense",
+            "to": "M46",
+            "right": null
+          }
+        ],
+        "actions": [
+          {
+            "label": "Back to statement",
+            "to": "M48",
+            "secondary": false
+          }
+        ],
+        "back": "M48"
+      },
+      {
+        "id": "M76",
+        "title": "Pending reporting date",
+        "blocks": [
+          {
+            "kind": "status",
+            "label": "Reporting overdue",
+            "tone": "Warning"
+          },
+          {
+            "kind": "field",
+            "label": "DCR date *",
+            "value": "20 Oct 2026",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Working type *",
+            "value": "Field work",
+            "state": "Default"
+          },
+          {
+            "kind": "field",
+            "label": "Late reporting reason *",
+            "value": "Connectivity issue during field work",
+            "state": "Default"
+          },
+          {
+            "kind": "notice",
+            "title": "Company reporting rules",
+            "body": "Allowed backdated dates and escalation rules are controlled by the administrator.",
+            "tone": "Warning",
+            "icon": "shield-check"
+          },
+          {
+            "kind": "row",
+            "title": "Saved visit drafts",
+            "sub": "2 calls available for this date",
+            "to": "M28",
+            "right": null
+          }
+        ],
+        "actions": [
+          {
+            "label": "Complete report",
+            "to": "M28",
+            "secondary": false
+          }
+        ],
+        "back": "M60"
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "name": "mr-connect",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.11.0"
+  },
+  "workspaces": [
+    "apps/api",
+    "apps/admin",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,admin 'npm run dev -w @mr/api' 'npm run dev -w @mr/admin'",
+    "seed:demo": "tsx apps/api/src/seed.ts --demo",
+    "build": "npm run build -w @mr/admin && tsc -p apps/api/tsconfig.json",
+    "typecheck": "tsc --noEmit -p apps/admin/tsconfig.json && tsc --noEmit -p apps/api/tsconfig.json",
+    "test": "tsx --test apps/api/test/*.test.ts",
+    "test:e2e": "playwright test",
+    "start": "tsx apps/api/src/server.ts",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0",
+    "concurrently": "^9.2.1",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

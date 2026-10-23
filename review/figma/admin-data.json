@@ -1,0 +1,4016 @@
+[
+  {
+    "group": {
+      "name": "01 / Admin access, team & oversight",
+      "y": 40,
+      "caption": "Workspace overview, field team, hierarchy, approvals, access roles and head-office updates."
+    },
+    "screens": [
+      {
+        "id": "A01",
+        "title": "Admin sign-in",
+        "nav": "Overview",
+        "type": "login"
+      },
+      {
+        "id": "A02",
+        "title": "A clear view of your field force",
+        "nav": "Overview",
+        "subtitle": "Thursday, 22 October 2026 · North zone · Updated 1 minute ago",
+        "actions": [
+          {
+            "label": "Export snapshot",
+            "to": "A43",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "View live activity",
+            "to": "A21",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "North zone",
+          "All divisions",
+          "All managers"
+        ],
+        "metrics": [
+          [
+            "Active representatives",
+            "32 / 36",
+            "4 yet to start today"
+          ],
+          [
+            "Doctor calls",
+            "189",
+            "↑ 12% vs previous day"
+          ],
+          [
+            "DCR submission",
+            "86%",
+            "31 of 36 submitted"
+          ],
+          [
+            "POB captured",
+            "₹4.82L",
+            "↑ 8.4% this month"
+          ]
+        ],
+        "charts": [
+          "Monthly doctor coverage",
+          "POB trend"
+        ],
+        "table": {
+          "title": "Needs your attention",
+          "cols": [
+            "Item",
+            "Representative",
+            "Date",
+            "Status",
+            "Action"
+          ],
+          "rows": [
+            [
+              "Daily call report",
+              "Aman Sharma",
+              "21 Oct",
+              {
+                "status": "Needs correction",
+                "tone": "Danger"
+              },
+              "Review report"
+            ],
+            [
+              "Expense claim · ₹650",
+              "Priya Singh",
+              "20 Oct",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              },
+              "Review claim"
+            ],
+            [
+              "GPS exception",
+              "Ravi Mehta",
+              "22 Oct",
+              {
+                "status": "Flagged",
+                "tone": "Warning"
+              },
+              "Check visit"
+            ]
+          ],
+          "to": "A08",
+          "action": {
+            "label": "All approvals",
+            "to": "A08",
+            "secondary": true,
+            "w": 180
+          }
+        }
+      },
+      {
+        "id": "A03",
+        "title": "Field team",
+        "nav": "Field team",
+        "subtitle": "Manage the people, hierarchy and coverage behind every customer visit.",
+        "actions": [
+          {
+            "label": "Import team",
+            "to": "A43",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Add employee",
+            "to": "A05",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "All HQs",
+          "All managers",
+          "Active employees"
+        ],
+        "metrics": [
+          [
+            "Employees",
+            "36",
+            "32 field · 4 managers"
+          ],
+          [
+            "Working today",
+            "32",
+            "89% attendance"
+          ],
+          [
+            "Pending setup",
+            "2",
+            "Complete territory mapping"
+          ],
+          [
+            "On leave",
+            "2",
+            "Approved requests"
+          ]
+        ],
+        "table": {
+          "title": "Employees",
+          "cols": [
+            "Name / code",
+            "Role",
+            "Head quarter",
+            "Reports to",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Aman Sharma · 001182",
+              "Sales Officer",
+              "Delhi",
+              "Anirudh Kumar",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Priya Singh · 001204",
+              "Medical Representative",
+              "Gurugram",
+              "Anirudh Kumar",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Ravi Mehta · 001219",
+              "Medical Representative",
+              "Jaipur",
+              "Neeraj Verma",
+              {
+                "status": "On leave",
+                "tone": "Neutral"
+              }
+            ],
+            [
+              "Anirudh Kumar · 001262",
+              "Regional Manager",
+              "Delhi",
+              "Head office",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A04",
+          "total": 36
+        }
+      },
+      {
+        "id": "A04",
+        "title": "Aman Sharma",
+        "nav": "Field team",
+        "subtitle": "MR-001182 · Sales Officer · Delhi HQ · North zone",
+        "actions": [
+          {
+            "label": "Edit employee",
+            "to": "A05",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "View activity",
+            "to": "A22",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "metrics": [
+          [
+            "Month calls",
+            "128",
+            "86% coverage"
+          ],
+          [
+            "Working days",
+            "18",
+            "6 joint working days"
+          ],
+          [
+            "POB value",
+            "₹1.28L",
+            "26 booked orders"
+          ],
+          [
+            "Pending DCRs",
+            "2",
+            "Action required"
+          ]
+        ],
+        "forms": [
+          {
+            "title": "Employee & reporting information",
+            "fields": [
+              [
+                "Company",
+                "VIDYA"
+              ],
+              [
+                "Division",
+                "Pharma group"
+              ],
+              [
+                "Head quarter",
+                "Delhi"
+              ],
+              [
+                "Reporting manager",
+                "Anirudh Kumar"
+              ],
+              [
+                "Mobile",
+                "98765 43210"
+              ],
+              [
+                "Access role",
+                "Field representative"
+              ]
+            ]
+          }
+        ],
+        "table": {
+          "title": "Assigned routes",
+          "cols": [
+            "Route",
+            "DA type",
+            "One-way km",
+            "Customers",
+            "Frequency"
+          ],
+          "rows": [
+            [
+              "Delhi to Delhi",
+              "Local",
+              "0",
+              "85 doctors · 341 chemists",
+              "Monthly"
+            ],
+            [
+              "Delhi to Mayur Vihar",
+              "Local",
+              "23",
+              "24 doctors · 12 chemists",
+              "2 / month"
+            ]
+          ],
+          "to": "A14"
+        }
+      },
+      {
+        "id": "A05",
+        "title": "Employee setup",
+        "nav": "Field team",
+        "subtitle": "Create an account with the right reporting line, territory and access.",
+        "actions": [
+          {
+            "label": "Cancel",
+            "to": "A03",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Save employee",
+            "to": "A03",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "forms": [
+          {
+            "title": "Basic details",
+            "fields": [
+              [
+                "Employee name *",
+                "Aman Sharma"
+              ],
+              [
+                "Employee code *",
+                "MR-001182"
+              ],
+              [
+                "Designation *",
+                "Sales Officer"
+              ],
+              [
+                "Division *",
+                "Pharma group"
+              ],
+              [
+                "Registered email *",
+                "aman.sharma@example.com"
+              ],
+              [
+                "Mobile *",
+                "98765 43210"
+              ]
+            ]
+          },
+          {
+            "title": "Hierarchy & access",
+            "fields": [
+              [
+                "Zone *",
+                "North zone"
+              ],
+              [
+                "State *",
+                "Delhi"
+              ],
+              [
+                "Head quarter *",
+                "Delhi"
+              ],
+              [
+                "Reporting manager *",
+                "Anirudh Kumar"
+              ],
+              [
+                "Access role *",
+                "Field representative"
+              ],
+              [
+                "Joining date *",
+                "01 Oct 2026"
+              ]
+            ]
+          }
+        ],
+        "notice": [
+          "Account invitation",
+          "The employee receives company access instructions after the account is created.",
+          "Brand"
+        ]
+      },
+      {
+        "id": "A06",
+        "title": "Territories & head quarters",
+        "nav": "Routes & territories",
+        "subtitle": "Keep zones, states, HQs and areas aligned with field ownership.",
+        "actions": [
+          {
+            "label": "Add territory",
+            "to": "A15",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "North zone",
+          "All states",
+          "Active territories"
+        ],
+        "table": {
+          "title": "Territory hierarchy",
+          "cols": [
+            "Zone",
+            "State",
+            "Head quarter",
+            "Areas",
+            "Owner",
+            "Status"
+          ],
+          "rows": [
+            [
+              "North",
+              "Delhi",
+              "Delhi",
+              "24",
+              "Anirudh Kumar",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "North",
+              "Haryana",
+              "Gurugram",
+              "18",
+              "Anirudh Kumar",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "North",
+              "Rajasthan",
+              "Jaipur",
+              "22",
+              "Neeraj Verma",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "North",
+              "Uttarakhand",
+              "Dehradun",
+              "16",
+              "Kiran Rao",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A14"
+        },
+        "forms": [
+          {
+            "title": "Add an HQ area",
+            "fields": [
+              [
+                "Head quarter *",
+                "Delhi"
+              ],
+              [
+                "Area name *",
+                "Mayur Vihar Phase I"
+              ],
+              [
+                "City *",
+                "Delhi"
+              ],
+              [
+                "PIN code",
+                "110091"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Save area",
+                "to": "A40",
+                "secondary": false,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A07",
+        "title": "Roles & permissions",
+        "nav": "Settings",
+        "subtitle": "Define who can view, edit, approve and export within each scope.",
+        "actions": [
+          {
+            "label": "Save permissions",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "Regional manager",
+          "North zone"
+        ],
+        "notice": [
+          "Role-based access",
+          "Permissions are applied with company, division and territory scope.",
+          "Brand"
+        ],
+        "table": {
+          "title": "Permission matrix",
+          "cols": [
+            "Module",
+            "View",
+            "Create / edit",
+            "Approve",
+            "Export"
+          ],
+          "rows": [
+            [
+              "Daily call reports",
+              "Yes · Assigned team",
+              "Return for correction",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "Customer master",
+              "Yes · Territory",
+              "Yes",
+              "Yes",
+              "Yes"
+            ],
+            [
+              "Expenses",
+              "Yes · Assigned team",
+              "Review only",
+              "Yes · Within limit",
+              "Yes"
+            ],
+            [
+              "Employees",
+              "Yes · Assigned team",
+              "No",
+              "No",
+              "No"
+            ],
+            [
+              "Tracking",
+              "Working-day scope",
+              "No",
+              "Exceptions only",
+              "Yes"
+            ],
+            [
+              "Settings",
+              "No",
+              "No",
+              "No",
+              "No"
+            ]
+          ]
+        },
+        "forms": [
+          {
+            "title": "Approval and export limits",
+            "fields": [
+              [
+                "Expense approval limit",
+                "₹10,000"
+              ],
+              [
+                "Bulk export access",
+                "Allowed · Audit required"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A08",
+        "title": "Approvals inbox",
+        "nav": "Approvals",
+        "subtitle": "Review the work that needs a decision, with context from the field.",
+        "actions": [
+          {
+            "label": "Open next item",
+            "to": "A24",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "All request types",
+          "Pending",
+          "Assigned to me",
+          "This week"
+        ],
+        "metrics": [
+          [
+            "Daily reports",
+            "8",
+            "3 returned for correction"
+          ],
+          [
+            "Expense claims",
+            "12",
+            "₹24,850 total"
+          ],
+          [
+            "Tour plans",
+            "4",
+            "November coverage"
+          ],
+          [
+            "Leave requests",
+            "2",
+            "Upcoming dates"
+          ]
+        ],
+        "table": {
+          "title": "Requests awaiting review",
+          "cols": [
+            "Request",
+            "Employee",
+            "Submitted",
+            "Amount / period",
+            "Status"
+          ],
+          "rows": [
+            [
+              "DCR · 22 Oct",
+              "Aman Sharma",
+              "Today · 6:15 PM",
+              "2 visits",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Expense · EXP-0241",
+              "Aman Sharma",
+              "22 Oct · 6:15 PM",
+              "₹450",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Tour plan · November",
+              "Priya Singh",
+              "21 Oct · 4:40 PM",
+              "02–30 Nov",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Leave · Casual",
+              "Aman Sharma",
+              "21 Oct · 3:15 PM",
+              "28–29 Oct",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Customer addition",
+              "Ravi Mehta",
+              "20 Oct · 1:30 PM",
+              "Dr. Neha Kapoor",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ]
+          ],
+          "to": "A24",
+          "total": 26
+        },
+        "extraTable": {
+          "title": "Review queues",
+          "cols": [
+            "Queue",
+            "Pending",
+            "Open"
+          ],
+          "rows": [
+            [
+              "Daily reports",
+              "8",
+              "Review reports"
+            ],
+            [
+              "Expenses",
+              "12",
+              "Review claims"
+            ],
+            [
+              "Leave",
+              "2",
+              "Review leave"
+            ],
+            [
+              "Tour plans",
+              "4",
+              "Review plans"
+            ]
+          ],
+          "to": "A25"
+        }
+      },
+      {
+        "id": "A09",
+        "title": "Head-office updates",
+        "nav": "Settings",
+        "subtitle": "Publish targeted announcements and mobile banners to your field team.",
+        "actions": [
+          {
+            "label": "Publish update",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "forms": [
+          {
+            "title": "New announcement",
+            "fields": [
+              [
+                "Title *",
+                "October campaign briefing"
+              ],
+              [
+                "Audience *",
+                "Pharma division · North zone"
+              ],
+              [
+                "Publish date *",
+                "22 Oct 2026"
+              ],
+              [
+                "Expiry date",
+                "31 Oct 2026"
+              ],
+              [
+                "Message *",
+                "Review the October focus products before your next call."
+              ],
+              [
+                "Banner asset",
+                "october-field-banner.png"
+              ]
+            ]
+          }
+        ],
+        "table": {
+          "title": "Published updates",
+          "cols": [
+            "Title",
+            "Audience",
+            "Published",
+            "Views",
+            "Status"
+          ],
+          "rows": [
+            [
+              "October campaign briefing",
+              "North zone",
+              "22 Oct",
+              "28 / 36",
+              {
+                "status": "Published",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Reporting reminder",
+              "All field employees",
+              "20 Oct",
+              "35 / 36",
+              {
+                "status": "Published",
+                "tone": "Success"
+              }
+            ],
+            [
+              "November plan window",
+              "All field employees",
+              "19 Oct",
+              "32 / 36",
+              {
+                "status": "Published",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A09"
+        }
+      }
+    ]
+  },
+  {
+    "group": {
+      "name": "02 / Customers, territories & plans",
+      "y": 6010,
+      "caption": "Customer directories, routes, bulk tagging, tour approvals, campaigns and approved content."
+    },
+    "screens": [
+      {
+        "id": "A10",
+        "title": "Customer directory",
+        "nav": "Customers",
+        "subtitle": "One accurate source for doctors, chemists, hospitals, stockists and other customers.",
+        "actions": [
+          {
+            "label": "Import customers",
+            "to": "A43",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Add doctor",
+            "to": "A11",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "Doctors",
+          "Delhi HQ",
+          "All specialties",
+          "All classes"
+        ],
+        "metrics": [
+          [
+            "Doctors",
+            "6,100",
+            "Assigned across 36 employees"
+          ],
+          [
+            "Chemists",
+            "27,556",
+            "Active retail universe"
+          ],
+          [
+            "Pending changes",
+            "14",
+            "Review additions and edits"
+          ],
+          [
+            "Coverage",
+            "86%",
+            "This month"
+          ]
+        ],
+        "table": {
+          "title": "Doctors",
+          "cols": [
+            "Doctor",
+            "Speciality / class",
+            "Area",
+            "Assigned employee",
+            "Frequency",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Dr. Alka Jain",
+              "Gynaecologist · A+",
+              "Dyalpur",
+              "Aman Sharma",
+              "2 / month",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Dr. Surendra Kumar",
+              "General physician · A",
+              "Geeta Colony",
+              "Aman Sharma",
+              "2 / month",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Dr. Anurag Gupta",
+              "Ayurvedic · A",
+              "Krishna Nagar",
+              "Aman Sharma",
+              "1 / month",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Dr. Neha Kapoor",
+              "General physician · A+",
+              "Mayur Vihar",
+              "Aman Sharma",
+              "2 / month",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ]
+          ],
+          "to": "A11",
+          "total": 6100
+        }
+      },
+      {
+        "id": "A11",
+        "title": "Doctor record",
+        "nav": "Customers",
+        "subtitle": "Dr. Neha Kapoor · Professional details, location and territory assignments.",
+        "actions": [
+          {
+            "label": "Back to directory",
+            "to": "A10",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Save record",
+            "to": "A10",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "forms": [
+          {
+            "title": "Professional information",
+            "fields": [
+              [
+                "Doctor name *",
+                "Dr. Neha Kapoor"
+              ],
+              [
+                "Speciality *",
+                "General physician"
+              ],
+              [
+                "Qualification *",
+                "MBBS"
+              ],
+              [
+                "Category / class *",
+                "Core · A+"
+              ],
+              [
+                "Visit frequency *",
+                "2 per month"
+              ],
+              [
+                "Mobile *",
+                "98765 43210"
+              ],
+              [
+                "Gender *",
+                "Female"
+              ],
+              [
+                "Assigned employee *",
+                "Aman Sharma"
+              ]
+            ]
+          },
+          {
+            "title": "Route & addresses",
+            "fields": [
+              [
+                "Route *",
+                "Delhi to Mayur Vihar"
+              ],
+              [
+                "HQ / area *",
+                "Delhi · Mayur Vihar"
+              ],
+              [
+                "State *",
+                "Delhi"
+              ],
+              [
+                "Clinic PIN code *",
+                "110091"
+              ],
+              [
+                "Residence address *",
+                "24, Sector 1, Mayur Vihar"
+              ],
+              [
+                "Clinic address *",
+                "12, Market Road, Mayur Vihar"
+              ]
+            ]
+          }
+        ],
+        "notice": [
+          "Change history",
+          "Master changes preserve prior call history and are recorded in the audit log.",
+          "Brand"
+        ]
+      },
+      {
+        "id": "A12",
+        "title": "Chemists & retail customers",
+        "nav": "Customers",
+        "subtitle": "Manage chemist contact details, areas, routes and visit frequency.",
+        "actions": [
+          {
+            "label": "Add chemist",
+            "to": "A11",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "Delhi HQ",
+          "All areas",
+          "Active"
+        ],
+        "table": {
+          "title": "Chemist directory",
+          "cols": [
+            "Chemist",
+            "Contact person",
+            "Area",
+            "Route",
+            "Employee",
+            "Status"
+          ],
+          "rows": [
+            [
+              "A Plus Pharmacy",
+              "Rahul Mehta",
+              "Dyalpur",
+              "Delhi to Delhi",
+              "Aman Sharma",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "City Medical Store",
+              "Neha Verma",
+              "Geeta Colony",
+              "Delhi to Delhi",
+              "Aman Sharma",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Care Pharmacy",
+              "Arjun Rao",
+              "Mayur Vihar",
+              "Delhi to Mayur Vihar",
+              "Priya Singh",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A16",
+          "total": 341
+        },
+        "forms": [
+          {
+            "title": "Chemist record",
+            "fields": [
+              [
+                "Chemist name *",
+                "A Plus Pharmacy"
+              ],
+              [
+                "Contact name *",
+                "Rahul Mehta"
+              ],
+              [
+                "Mobile *",
+                "98765 43211"
+              ],
+              [
+                "Visit frequency *",
+                "2 per month"
+              ],
+              [
+                "Route *",
+                "Delhi to Delhi"
+              ],
+              [
+                "Address / PIN *",
+                "Dyalpur, Delhi · 110094"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Save chemist",
+                "to": "A40",
+                "secondary": false,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A13",
+        "title": "Stockists & institutions",
+        "nav": "Customers",
+        "subtitle": "Maintain stockist, hospital and customer records linked to field activity.",
+        "actions": [
+          {
+            "label": "Add customer",
+            "to": "A11",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "All customer types",
+          "North zone",
+          "Active"
+        ],
+        "table": {
+          "title": "Institution directory",
+          "cols": [
+            "Customer",
+            "Type",
+            "Head quarter",
+            "Contact",
+            "Assigned employee",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Delhi Pharma Distributors",
+              "Stockist",
+              "Delhi",
+              "Rahul Mehta",
+              "Aman Sharma",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "City Care Hospital",
+              "Hospital",
+              "Delhi",
+              "Front office",
+              "Aman Sharma",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "North Medical Supplies",
+              "Stockist",
+              "Gurugram",
+              "Arjun Rao",
+              "Priya Singh",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A31",
+          "total": 32
+        },
+        "extraTable": {
+          "title": "Customer activity",
+          "cols": [
+            "Customer",
+            "Last call",
+            "POB value",
+            "Statement status"
+          ],
+          "rows": [
+            [
+              "Delhi Pharma Distributors",
+              "22 Oct",
+              "₹12,850",
+              "October received"
+            ],
+            [
+              "City Care Hospital",
+              "20 Oct",
+              "₹4,200",
+              "Not applicable"
+            ]
+          ],
+          "to": "A23"
+        }
+      },
+      {
+        "id": "A14",
+        "title": "Routes & coverage",
+        "nav": "Routes & territories",
+        "subtitle": "Build practical routes with clear allowance rules and customer ownership.",
+        "actions": [
+          {
+            "label": "Territories",
+            "to": "A06",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Add route",
+            "to": "A15",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "North zone",
+          "Delhi HQ",
+          "Aman Sharma",
+          "All DA types"
+        ],
+        "table": {
+          "title": "Route master",
+          "cols": [
+            "Route",
+            "Employee",
+            "DA type",
+            "One-way km",
+            "Doctors / chemists",
+            "Frequency"
+          ],
+          "rows": [
+            [
+              "Delhi to Delhi",
+              "Aman Sharma",
+              "Local",
+              "0",
+              "85 / 341",
+              "Monthly"
+            ],
+            [
+              "Gurugram to Uttam Nagar",
+              "Aman Sharma",
+              "Local",
+              "23",
+              "12 / 18",
+              "2 / month"
+            ],
+            [
+              "Meerut to Bareilly",
+              "Ravi Mehta",
+              "Outstation · Double",
+              "244",
+              "22 / 34",
+              "1 / month"
+            ],
+            [
+              "Delhi to Mayur Vihar",
+              "Priya Singh",
+              "Local",
+              "23",
+              "24 / 12",
+              "2 / month"
+            ]
+          ],
+          "to": "A15",
+          "total": 37,
+          "action": {
+            "label": "Customer route links",
+            "to": "A16",
+            "secondary": true,
+            "w": 180
+          }
+        }
+      },
+      {
+        "id": "A15",
+        "title": "Route configuration",
+        "nav": "Routes & territories",
+        "subtitle": "Origin, stops, distance, DA type and additional allowance in one record.",
+        "actions": [
+          {
+            "label": "Cancel",
+            "to": "A14",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Save route",
+            "to": "A14",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "forms": [
+          {
+            "title": "Route and stops",
+            "fields": [
+              [
+                "Assigned employee *",
+                "Aman Sharma"
+              ],
+              [
+                "Route name *",
+                "Gurugram to Uttam Nagar"
+              ],
+              [
+                "From location *",
+                "Gurgaon Railway Station Parking"
+              ],
+              [
+                "Via 1 / destination *",
+                "Uttam Nagar, Delhi"
+              ],
+              [
+                "Via 2 / Via 3",
+                "Optional intermediate locations"
+              ],
+              [
+                "Via 4 / Via 5",
+                "Optional intermediate locations"
+              ]
+            ]
+          },
+          {
+            "title": "Distance & allowances",
+            "fields": [
+              [
+                "DA type *",
+                "Local"
+              ],
+              [
+                "Fare calculation",
+                "Single side"
+              ],
+              [
+                "One-way distance *",
+                "23 km"
+              ],
+              [
+                "Visit frequency *",
+                "2 per month"
+              ],
+              [
+                "Additional allowance",
+                "None"
+              ],
+              [
+                "Additional amount",
+                "₹0.00"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Calculate distance",
+                "to": "A15",
+                "secondary": true,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A16",
+        "title": "Customer route tagging",
+        "nav": "Routes & territories",
+        "subtitle": "Link doctors and chemists individually or apply an area-based assignment.",
+        "actions": [
+          {
+            "label": "Save route links",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "Doctors",
+          "Aman Sharma",
+          "Pending links",
+          "Delhi to Delhi"
+        ],
+        "notice": [
+          "Area-wise route assignment",
+          "Select customers, choose an area or route, then save the assignment.",
+          "Brand"
+        ],
+        "table": {
+          "title": "Route links",
+          "cols": [
+            "Select",
+            "Customer",
+            "Type / class",
+            "Area",
+            "Route",
+            "Status"
+          ],
+          "rows": [
+            [
+              "✓",
+              "Dr. Alka Jain",
+              "Doctor · A+",
+              "Dyalpur",
+              "Delhi to Delhi",
+              {
+                "status": "Assigned",
+                "tone": "Success"
+              }
+            ],
+            [
+              "✓",
+              "Dr. Surendra Kumar",
+              "Doctor · A",
+              "Geeta Colony",
+              "Delhi to Delhi",
+              {
+                "status": "Assigned",
+                "tone": "Success"
+              }
+            ],
+            [
+              "□",
+              "Dr. Neha Kapoor",
+              "Doctor · A+",
+              "Mayur Vihar",
+              "Choose route",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "□",
+              "A Plus Pharmacy",
+              "Chemist",
+              "Dyalpur",
+              "Delhi to Delhi",
+              {
+                "status": "Assigned",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "total": 126
+        },
+        "forms": [
+          {
+            "title": "Bulk assignment",
+            "fields": [
+              [
+                "Area filter",
+                "Mayur Vihar"
+              ],
+              [
+                "Apply selected route",
+                "Delhi to Mayur Vihar"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A17",
+        "title": "Tour plans",
+        "nav": "Tour plans",
+        "subtitle": "Review the month ahead and keep coverage aligned with team capacity.",
+        "actions": [
+          {
+            "label": "Export plans",
+            "to": "A43",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Open next plan",
+            "to": "A18",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "November 2026",
+          "North zone",
+          "All managers",
+          "All statuses"
+        ],
+        "metrics": [
+          [
+            "Submitted",
+            "32",
+            "of 36 employees"
+          ],
+          [
+            "Pending review",
+            "4",
+            "Manager action needed"
+          ],
+          [
+            "Coverage gaps",
+            "6",
+            "Days without a route"
+          ],
+          [
+            "Approved",
+            "28",
+            "Ready for the month"
+          ]
+        ],
+        "table": {
+          "title": "Employee tour plans",
+          "cols": [
+            "Employee",
+            "Head quarter",
+            "Planned field days",
+            "Joint working days",
+            "Submitted",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Aman Sharma",
+              "Delhi",
+              "22",
+              "6",
+              "21 Oct",
+              {
+                "status": "Approved",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Priya Singh",
+              "Gurugram",
+              "21",
+              "5",
+              "21 Oct",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Ravi Mehta",
+              "Jaipur",
+              "20",
+              "4",
+              "20 Oct",
+              {
+                "status": "Returned",
+                "tone": "Danger"
+              }
+            ]
+          ],
+          "to": "A18",
+          "total": 36
+        }
+      },
+      {
+        "id": "A18",
+        "title": "Review November tour plan",
+        "nav": "Tour plans",
+        "subtitle": "Priya Singh · Gurugram HQ · Submitted 21 October",
+        "actions": [
+          {
+            "label": "Request correction",
+            "to": "A24",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Approve plan",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "metrics": [
+          [
+            "Field days",
+            "21",
+            "2 meeting days"
+          ],
+          [
+            "Planned visits",
+            "210",
+            "160 doctor · 50 chemist"
+          ],
+          [
+            "Joint working",
+            "5 days",
+            "With regional manager"
+          ],
+          [
+            "Route distance",
+            "840 km",
+            "Master route estimate"
+          ]
+        ],
+        "table": {
+          "title": "Planned schedule",
+          "cols": [
+            "Date",
+            "Working type",
+            "Route",
+            "Work with",
+            "Doctor / chemist",
+            "Status"
+          ],
+          "rows": [
+            [
+              "02 Nov",
+              "Field work",
+              "Delhi to Delhi",
+              "Self",
+              "8 / 2",
+              {
+                "status": "Planned",
+                "tone": "Brand"
+              }
+            ],
+            [
+              "03 Nov",
+              "Field work",
+              "Delhi to Gurugram",
+              "Anirudh Kumar",
+              "7 / 3",
+              {
+                "status": "Joint work",
+                "tone": "Brand"
+              }
+            ],
+            [
+              "04 Nov",
+              "Training",
+              "Delhi HQ",
+              "Team",
+              "—",
+              {
+                "status": "Training",
+                "tone": "Neutral"
+              }
+            ],
+            [
+              "05 Nov",
+              "Field work",
+              "Delhi to Mayur Vihar",
+              "Self",
+              "8 / 2",
+              {
+                "status": "Planned",
+                "tone": "Brand"
+              }
+            ]
+          ],
+          "total": 24
+        },
+        "forms": [
+          {
+            "title": "Review note",
+            "fields": [
+              [
+                "Manager comment",
+                "Coverage and joint working reviewed."
+              ],
+              [
+                "Decision",
+                "Approve monthly plan"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A19",
+        "title": "Campaign management",
+        "nav": "Campaigns",
+        "subtitle": "Coordinate focus products, target doctors and campaign call coverage.",
+        "actions": [
+          {
+            "label": "Create campaign",
+            "to": "A20",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "metrics": [
+          [
+            "Active campaigns",
+            "3",
+            "Across pharma division"
+          ],
+          [
+            "Target doctors",
+            "240",
+            "Assigned audience"
+          ],
+          [
+            "Completed focus calls",
+            "186",
+            "78% of target"
+          ],
+          [
+            "Sponsorship requests",
+            "4",
+            "Awaiting review"
+          ]
+        ],
+        "table": {
+          "title": "Campaigns",
+          "cols": [
+            "Campaign",
+            "Period",
+            "Focus products",
+            "Target / completed",
+            "Owner",
+            "Status"
+          ],
+          "rows": [
+            [
+              "October focus",
+              "01–31 Oct",
+              "Hadensa · Face to Face",
+              "240 / 186",
+              "Head office",
+              {
+                "status": "Active",
+                "tone": "Success"
+              }
+            ],
+            [
+              "November availability",
+              "01–30 Nov",
+              "Curity Capsules",
+              "180 / 0",
+              "Marketing",
+              {
+                "status": "Scheduled",
+                "tone": "Brand"
+              }
+            ]
+          ],
+          "to": "A20"
+        },
+        "extraTable": {
+          "title": "Sponsorship requests",
+          "cols": [
+            "Doctor",
+            "Employee",
+            "Activity",
+            "Requested support",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Dr. Alka Jain",
+              "Aman Sharma",
+              "Clinic education event",
+              "₹5,000",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ]
+          ],
+          "to": "A24"
+        }
+      },
+      {
+        "id": "A20",
+        "title": "Products & detailing content",
+        "nav": "Campaigns",
+        "subtitle": "Manage product records, presentation versions and the approved field library.",
+        "actions": [
+          {
+            "label": "Publish content",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "forms": [
+          {
+            "title": "Product and presentation",
+            "fields": [
+              [
+                "Product name *",
+                "Hadensa Capsules"
+              ],
+              [
+                "Product code *",
+                "PRD-0018"
+              ],
+              [
+                "Pack / unit *",
+                "Capsule pack"
+              ],
+              [
+                "Content version *",
+                "October 2026 · v3"
+              ],
+              [
+                "Assigned divisions *",
+                "Pharma group"
+              ],
+              [
+                "Presentation asset *",
+                "hadensa-product-overview.pdf"
+              ],
+              [
+                "Publish date *",
+                "22 Oct 2026"
+              ],
+              [
+                "Status *",
+                "Approved for field use"
+              ]
+            ]
+          }
+        ],
+        "table": {
+          "title": "Published product library",
+          "cols": [
+            "Product",
+            "Version",
+            "Slides",
+            "Audience",
+            "Updated",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Hadensa Capsules",
+              "v3 · Oct 2026",
+              "4",
+              "Pharma division",
+              "22 Oct",
+              {
+                "status": "Published",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Face to Face 10 GM",
+              "v2 · Sep 2026",
+              "6",
+              "Pharma division",
+              "30 Sep",
+              {
+                "status": "Published",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Dermadol Gel 25 GM",
+              "v1 · Oct 2026",
+              "5",
+              "Pharma division",
+              "18 Oct",
+              {
+                "status": "Draft",
+                "tone": "Neutral"
+              }
+            ]
+          ],
+          "to": "A20"
+        }
+      }
+    ]
+  },
+  {
+    "group": {
+      "name": "03 / Field operations & review workflows",
+      "y": 13110,
+      "caption": "GPS activity, tracking reports, DCR review, expenses, leave, verification, materials and bookings."
+    },
+    "screens": [
+      {
+        "id": "A21",
+        "title": "Field activity map",
+        "nav": "Calls & tracking",
+        "subtitle": "Follow working-day activity, inspect call events and replay a route.",
+        "actions": [
+          {
+            "label": "Tracking report",
+            "to": "A22",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Export activity",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "22 Oct 2026",
+          "Delhi HQ",
+          "Aman Sharma",
+          "All event types"
+        ],
+        "metrics": [
+          [
+            "Active in field",
+            "32",
+            "of 36 representatives"
+          ],
+          [
+            "Calls recorded",
+            "284",
+            "Doctor · Chemist · Other"
+          ],
+          [
+            "Route distance",
+            "1,428 km",
+            "GPS distance today"
+          ],
+          [
+            "Exceptions",
+            "3",
+            "Manager review pending"
+          ]
+        ],
+        "map": {
+          "title": "Aman Sharma"
+        },
+        "forms": [
+          {
+            "title": "Route replay",
+            "fields": [
+              [
+                "Time slider",
+                "09:08  ━━━━━●━━━━  18:15"
+              ],
+              [
+                "Replay speed",
+                "1× · Play / Pause"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Open visit event",
+                "to": "A23",
+                "secondary": true,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A22",
+        "title": "Mobile area tracking",
+        "nav": "Calls & tracking",
+        "subtitle": "Compare plans with actual visits, distance, timing and sales activity.",
+        "actions": [
+          {
+            "label": "Advanced filters",
+            "to": "A42",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Export Excel",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "01–30 Jun 2026",
+          "All field staff",
+          "Present",
+          "Mobile report"
+        ],
+        "metrics": [
+          [
+            "Employees",
+            "36",
+            "743 daily records"
+          ],
+          [
+            "Doctor calls / met",
+            "1,892 / 1,367",
+            "6,100 in universe"
+          ],
+          [
+            "Chemist calls / met",
+            "15,435 / 10,189",
+            "27,556 in universe"
+          ],
+          [
+            "Stockist calls / met",
+            "320 / 145",
+            "All selected staff"
+          ]
+        ],
+        "table": {
+          "title": "Daily employee tracking",
+          "cols": [
+            "Employee / HQ",
+            "Date / start",
+            "Planned → worked route",
+            "First / last call",
+            "GPS / master km",
+            "DCR status"
+          ],
+          "rows": [
+            [
+              "Aman Sharma · Delhi",
+              "22 Oct · 09:08",
+              "Delhi → Delhi",
+              "10:15 / 17:42",
+              "38.1 / 36.0",
+              {
+                "status": "Submitted",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Priya Singh · Gurugram",
+              "22 Oct · 08:52",
+              "Gurugram → Gurugram",
+              "09:32 / 17:28",
+              "42.5 / 41.0",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Ravi Mehta · Jaipur",
+              "22 Oct · 09:04",
+              "Jaipur → Amer",
+              "09:45 / 16:50",
+              "88.4 / 80.0",
+              {
+                "status": "Flagged",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Neha Rao · Delhi",
+              "22 Oct · 09:10",
+              "Mayur Vihar → Delhi",
+              "10:08 / 17:10",
+              "31.8 / 32.0",
+              {
+                "status": "Submitted",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A23",
+          "total": 743
+        },
+        "extraTable": {
+          "title": "Additional tracking dimensions",
+          "cols": [
+            "Planning",
+            "Call metrics",
+            "Commercial",
+            "Verification"
+          ],
+          "rows": [
+            [
+              "Planned / actual work-with",
+              "Doctor · Chemist · Stockist · Customer",
+              "Doctor and chemist POB",
+              "Day plan / final submit location"
+            ],
+            [
+              "Working type / DA type",
+              "Reminder calls · Missed calls",
+              "Samples and promotional inputs",
+              "Timestamp / GPS accuracy"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "A23",
+        "title": "Daily report · Aman Sharma",
+        "nav": "Calls & tracking",
+        "subtitle": "DCR-20261022-1182 · Delhi HQ · 22 October 2026",
+        "actions": [
+          {
+            "label": "View route map",
+            "to": "A21",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Review report",
+            "to": "A24",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "metrics": [
+          [
+            "Calls completed",
+            "2",
+            "1 doctor · 1 chemist"
+          ],
+          [
+            "POB captured",
+            "₹9,922.14",
+            "Doctor and chemist orders"
+          ],
+          [
+            "Claimed expense",
+            "₹450",
+            "DA ₹250 · Other ₹200"
+          ],
+          [
+            "First / last call",
+            "10:15 / 17:42",
+            "GPS 38.1 km"
+          ]
+        ],
+        "table": {
+          "title": "Visit timeline",
+          "cols": [
+            "Time",
+            "Customer",
+            "Call type",
+            "Products / samples",
+            "POB",
+            "Verification"
+          ],
+          "rows": [
+            [
+              "11:03–11:18",
+              "Dr. Alka Jain",
+              "Doctor · Met",
+              "2 products · 2 samples",
+              "₹3,161.08",
+              {
+                "status": "Verified",
+                "tone": "Success"
+              }
+            ],
+            [
+              "12:32–12:46",
+              "A Plus Pharmacy",
+              "Chemist · Met",
+              "4 products · 1 sample",
+              "₹6,761.06",
+              {
+                "status": "Verified",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A28"
+        },
+        "forms": [
+          {
+            "title": "Plan and submission context",
+            "fields": [
+              [
+                "Planned route / worked route",
+                "Delhi to Delhi / Delhi to Delhi"
+              ],
+              [
+                "Planned / actual work-with",
+                "Anirudh Kumar / Anirudh Kumar"
+              ],
+              [
+                "Day plan submitted",
+                "22 Oct · 09:08 AM"
+              ],
+              [
+                "Final submitted",
+                "22 Oct · 6:15 PM"
+              ],
+              [
+                "Day remark",
+                "Completed planned coverage for today."
+              ],
+              [
+                "Submission status",
+                "Pending manager review"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A24",
+        "title": "Review & decide",
+        "nav": "Approvals",
+        "subtitle": "DCR-20261022-1182 · Aman Sharma · Pending manager review",
+        "actions": [
+          {
+            "label": "Return for correction",
+            "to": "A40",
+            "secondary": true,
+            "w": 196
+          },
+          {
+            "label": "Approve report",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "notice": [
+          "Review the source evidence",
+          "Plan, call timestamps, products, GPS and expense totals are available before your decision.",
+          "Brand"
+        ],
+        "forms": [
+          {
+            "title": "Submission summary",
+            "fields": [
+              [
+                "Representative",
+                "Aman Sharma · Delhi HQ"
+              ],
+              [
+                "Reporting date",
+                "22 Oct 2026"
+              ],
+              [
+                "Doctor / chemist calls",
+                "1 / 1"
+              ],
+              [
+                "POB total",
+                "₹9,922.14"
+              ],
+              [
+                "Expense total",
+                "₹450.00"
+              ],
+              [
+                "GPS / master distance",
+                "38.1 km / 36.0 km"
+              ]
+            ]
+          },
+          {
+            "title": "Decision note",
+            "fields": [
+              [
+                "Decision *",
+                "Approve / Return for correction"
+              ],
+              [
+                "Comment *",
+                "Add a clear reason when returning a report."
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Save review decision",
+                "to": "A40",
+                "secondary": false,
+                "w": 180
+              }
+            ],
+            "note": "Returned reports remain traceable and can be resubmitted by the representative."
+          }
+        ],
+        "table": {
+          "title": "Review history",
+          "cols": [
+            "When",
+            "Actor",
+            "Action",
+            "Comment"
+          ],
+          "rows": [
+            [
+              "22 Oct · 6:15 PM",
+              "Aman Sharma",
+              "Submitted",
+              "Completed planned coverage."
+            ],
+            [
+              "22 Oct · 6:20 PM",
+              "Anirudh Kumar",
+              "Opened for review",
+              "—"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "A25",
+        "title": "Expense approvals",
+        "nav": "Approvals",
+        "subtitle": "Review daily claims with allowance calculations and receipt evidence.",
+        "actions": [
+          {
+            "label": "Export claims",
+            "to": "A43",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Review next claim",
+            "to": "A26",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "North zone",
+          "Pending",
+          "All expense heads"
+        ],
+        "metrics": [
+          [
+            "Pending claims",
+            "12",
+            "Awaiting a decision"
+          ],
+          [
+            "Pending amount",
+            "₹24,850",
+            "Across 12 claims"
+          ],
+          [
+            "Approved this month",
+            "₹1.42L",
+            "124 claims"
+          ],
+          [
+            "Returned",
+            "3",
+            "Receipt or amount queries"
+          ]
+        ],
+        "table": {
+          "title": "Expense claims",
+          "cols": [
+            "Claim",
+            "Employee / date",
+            "DA / TA",
+            "Other expenses",
+            "Claim total",
+            "Status"
+          ],
+          "rows": [
+            [
+              "EXP-0241",
+              "Aman Sharma · 22 Oct",
+              "₹250 / ₹0",
+              "₹200",
+              "₹450",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "EXP-0238",
+              "Priya Singh · 21 Oct",
+              "₹300 / ₹120",
+              "₹180",
+              "₹600",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "EXP-0235",
+              "Ravi Mehta · 20 Oct",
+              "₹350 / ₹200",
+              "₹100",
+              "₹650",
+              {
+                "status": "Returned",
+                "tone": "Danger"
+              }
+            ]
+          ],
+          "to": "A26",
+          "total": 12
+        }
+      },
+      {
+        "id": "A26",
+        "title": "Review expense · EXP-0241",
+        "nav": "Approvals",
+        "subtitle": "Aman Sharma · Delhi to Delhi · 22 October 2026",
+        "actions": [
+          {
+            "label": "Return claim",
+            "to": "A40",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Approve ₹450",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "metrics": [
+          [
+            "Claimed amount",
+            "₹450",
+            "DA and other expenses"
+          ],
+          [
+            "Eligible DA",
+            "₹250",
+            "Local route allowance"
+          ],
+          [
+            "Eligible TA",
+            "₹0",
+            "0 km × configured rate"
+          ],
+          [
+            "Receipt value",
+            "₹200",
+            "One attached receipt"
+          ]
+        ],
+        "forms": [
+          {
+            "title": "Expense evidence",
+            "fields": [
+              [
+                "Expense head",
+                "Miscellaneous expense"
+              ],
+              [
+                "Claimed / approved amount",
+                "₹200.00 / ₹200.00"
+              ],
+              [
+                "Receipt",
+                "receipt-22oct.jpg · View attachment"
+              ],
+              [
+                "Employee remark",
+                "Local conveyance for clinic visits"
+              ],
+              [
+                "Policy check",
+                "Within configured allowance"
+              ],
+              [
+                "Manager comment",
+                "Receipt and purpose reviewed."
+              ]
+            ],
+            "actions": [
+              {
+                "label": "View receipt",
+                "to": "A26",
+                "secondary": true,
+                "w": 180
+              },
+              {
+                "label": "Save decision",
+                "to": "A40",
+                "secondary": false,
+                "w": 180
+              }
+            ]
+          }
+        ],
+        "table": {
+          "title": "Calculation breakdown",
+          "cols": [
+            "Component",
+            "Basis",
+            "Claimed",
+            "Approved"
+          ],
+          "rows": [
+            [
+              "Daily allowance",
+              "Local route",
+              "₹250",
+              "₹250"
+            ],
+            [
+              "Travel allowance",
+              "0 km × configured rate",
+              "₹0",
+              "₹0"
+            ],
+            [
+              "Miscellaneous",
+              "Receipt attached",
+              "₹200",
+              "₹200"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "A27",
+        "title": "Leave approvals",
+        "nav": "Approvals",
+        "subtitle": "Review requested dates alongside coverage and available balances.",
+        "actions": [
+          {
+            "label": "Approve request",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "Upcoming dates",
+          "Pending",
+          "North zone"
+        ],
+        "table": {
+          "title": "Leave requests",
+          "cols": [
+            "Employee",
+            "Type",
+            "Dates",
+            "Days",
+            "Balance",
+            "Status"
+          ],
+          "rows": [
+            [
+              "Aman Sharma",
+              "Casual leave",
+              "28–29 Oct",
+              "2",
+              "8 days",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "Priya Singh",
+              "Casual leave",
+              "02 Nov",
+              "1",
+              "6 days",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ]
+          ],
+          "to": "A27"
+        },
+        "forms": [
+          {
+            "title": "Review request",
+            "fields": [
+              [
+                "Employee",
+                "Aman Sharma · Delhi HQ"
+              ],
+              [
+                "Reason",
+                "Personal commitment"
+              ],
+              [
+                "Tour plan impact",
+                "2 field days · 20 planned calls"
+              ],
+              [
+                "Coverage handover",
+                "Reassign priority calls to team"
+              ],
+              [
+                "Manager comment",
+                "Coverage handover confirmed."
+              ],
+              [
+                "Decision",
+                "Approve / Return / Reject"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Return request",
+                "to": "A40",
+                "secondary": true,
+                "w": 180
+              },
+              {
+                "label": "Approve leave",
+                "to": "A40",
+                "secondary": false,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A28",
+        "title": "Visit verification exception",
+        "nav": "Approvals",
+        "subtitle": "Dr. Alka Jain · Aman Sharma · 22 Oct, 11:03 AM",
+        "actions": [
+          {
+            "label": "Return for clarification",
+            "to": "A40",
+            "secondary": true,
+            "w": 216
+          },
+          {
+            "label": "Accept exception",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "notice": [
+          "Outside expected clinic area",
+          "This call requires a manager decision. A GPS exception is a review signal, not proof of misconduct.",
+          "Warning"
+        ],
+        "map": {
+          "title": "Flagged doctor check-in"
+        },
+        "forms": [
+          {
+            "title": "Verification context",
+            "fields": [
+              [
+                "Distance from clinic",
+                "340 m"
+              ],
+              [
+                "GPS accuracy",
+                "28 m"
+              ],
+              [
+                "Representative explanation",
+                "Doctor visiting a nearby hospital"
+              ],
+              [
+                "Review reason *",
+                "Confirmed alternate meeting location"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Save verification decision",
+                "to": "A40",
+                "secondary": false,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A29",
+        "title": "Samples & promotional inputs",
+        "nav": "Samples & inputs",
+        "subtitle": "Track allocations, dispatches, physical receipts and issued quantities.",
+        "actions": [
+          {
+            "label": "Create allocation",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "North zone",
+          "All materials",
+          "All employees"
+        ],
+        "metrics": [
+          [
+            "Allocated sample units",
+            "4,800",
+            "This month"
+          ],
+          [
+            "Acknowledged",
+            "4,560",
+            "95% received"
+          ],
+          [
+            "Issued in calls",
+            "3,218",
+            "Traceable by customer"
+          ],
+          [
+            "Shortages",
+            "24",
+            "3 challans with variances"
+          ]
+        ],
+        "table": {
+          "title": "Employee sample ledger",
+          "cols": [
+            "Material",
+            "Employee",
+            "Received",
+            "Issued",
+            "Balance",
+            "Batch"
+          ],
+          "rows": [
+            [
+              "Demo sample",
+              "Aman Sharma",
+              "24",
+              "2",
+              "22",
+              "DEMO-OCT26"
+            ],
+            [
+              "Clinic leaflet",
+              "Aman Sharma",
+              "45",
+              "5",
+              "40",
+              "LEAF-OCT26"
+            ],
+            [
+              "Clinic planner",
+              "Priya Singh",
+              "10",
+              "2",
+              "8",
+              "PLAN-OCT26"
+            ]
+          ],
+          "total": 128
+        },
+        "extraTable": {
+          "title": "Challan acknowledgements",
+          "cols": [
+            "Challan",
+            "Employee",
+            "Dispatched",
+            "Received / variance",
+            "Status"
+          ],
+          "rows": [
+            [
+              "CH-2026-0184",
+              "Aman Sharma",
+              "20 Oct",
+              "5 leaflets short",
+              {
+                "status": "Variance",
+                "tone": "Warning"
+              }
+            ],
+            [
+              "CH-2026-0171",
+              "Priya Singh",
+              "14 Oct",
+              "Received in full",
+              {
+                "status": "Acknowledged",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A29"
+        }
+      },
+      {
+        "id": "A30",
+        "title": "POB & sales activity",
+        "nav": "POB & sales",
+        "subtitle": "Track field bookings, stockist statements and customer-linked sales.",
+        "actions": [
+          {
+            "label": "Export bookings",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "All customers",
+          "All representatives",
+          "All statuses"
+        ],
+        "metrics": [
+          [
+            "POB value",
+            "₹4.82L",
+            "182 bookings"
+          ],
+          [
+            "Doctor POB",
+            "₹1.92L",
+            "72 doctor bookings"
+          ],
+          [
+            "Chemist POB",
+            "₹2.90L",
+            "110 chemist bookings"
+          ],
+          [
+            "Secondary sales",
+            "₹3.64L",
+            "Stockist-reported value"
+          ]
+        ],
+        "table": {
+          "title": "Personal order bookings",
+          "cols": [
+            "Order",
+            "Customer",
+            "Representative",
+            "Date",
+            "Value",
+            "Status"
+          ],
+          "rows": [
+            [
+              "POB-0184",
+              "Dr. Alka Jain",
+              "Aman Sharma",
+              "22 Oct",
+              "₹3,161.08",
+              {
+                "status": "Submitted",
+                "tone": "Brand"
+              }
+            ],
+            [
+              "POB-0185",
+              "A Plus Pharmacy",
+              "Aman Sharma",
+              "22 Oct",
+              "₹6,761.06",
+              {
+                "status": "Submitted",
+                "tone": "Brand"
+              }
+            ],
+            [
+              "POB-0182",
+              "Care Pharmacy",
+              "Priya Singh",
+              "21 Oct",
+              "₹4,280.00",
+              {
+                "status": "Acknowledged",
+                "tone": "Success"
+              }
+            ]
+          ],
+          "to": "A31",
+          "total": 182
+        },
+        "extraTable": {
+          "title": "Stockist statements",
+          "cols": [
+            "Stockist",
+            "Period",
+            "Submitted by",
+            "Statement status"
+          ],
+          "rows": [
+            [
+              "Delhi Pharma Distributors",
+              "October 2026",
+              "Aman Sharma",
+              "Received"
+            ],
+            [
+              "North Medical Supplies",
+              "October 2026",
+              "Priya Singh",
+              "Pending"
+            ]
+          ],
+          "to": "A31"
+        }
+      },
+      {
+        "id": "A31",
+        "title": "Order detail · POB-0184",
+        "nav": "POB & sales",
+        "subtitle": "Doctor-linked field booking · 22 Oct 2026 · Aman Sharma",
+        "actions": [
+          {
+            "label": "Back to bookings",
+            "to": "A30",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Acknowledge order",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "forms": [
+          {
+            "title": "Customer and fulfilment",
+            "fields": [
+              [
+                "Customer",
+                "Dr. Alka Jain · Dyalpur"
+              ],
+              [
+                "Representative",
+                "Aman Sharma"
+              ],
+              [
+                "Fulfilment stockist",
+                "Delhi Pharma Distributors"
+              ],
+              [
+                "Booking status",
+                "Submitted · Awaiting acknowledgement"
+              ]
+            ]
+          }
+        ],
+        "table": {
+          "title": "Booked products",
+          "cols": [
+            "Product",
+            "Quantity",
+            "Rate",
+            "Line value"
+          ],
+          "rows": [
+            [
+              "Curity Capsules",
+              "28",
+              "₹30.00",
+              "₹840.00"
+            ],
+            [
+              "DolTadafil 20 mg",
+              "8",
+              "₹52.50",
+              "₹420.00"
+            ],
+            [
+              "Face to Face 10 GM",
+              "8",
+              "₹45.00",
+              "₹360.00"
+            ],
+            [
+              "Hadensa Capsules",
+              "50",
+              "₹20.00",
+              "₹1,000.00"
+            ],
+            [
+              "Hadensa Ointment",
+              "58",
+              "₹9.329",
+              "₹541.08"
+            ]
+          ]
+        },
+        "notice": [
+          "Booking total · ₹3,161.08",
+          "A personal order booking is sent to the assigned fulfilment workflow. Invoice and dispatch status are managed through the configured integration.",
+          "Brand"
+        ]
+      }
+    ]
+  },
+  {
+    "group": {
+      "name": "04 / Reporting, controls & handoff states",
+      "y": 20210,
+      "caption": "Coverage insights, deviations, product analysis, configurable policies, integrations, audit and exports."
+    },
+    "screens": [
+      {
+        "id": "A32",
+        "title": "Reporting center",
+        "nav": "Reports",
+        "subtitle": "Explore field activity, coverage, products, expenses and team discipline.",
+        "actions": [
+          {
+            "label": "Export center",
+            "to": "A43",
+            "secondary": true,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "North zone",
+          "All managers"
+        ],
+        "table": {
+          "title": "Available reports",
+          "cols": [
+            "Report",
+            "What it answers",
+            "Refresh",
+            "Open"
+          ],
+          "rows": [
+            [
+              "Field productivity",
+              "Calls, working days and coverage by employee",
+              "Daily",
+              "View report"
+            ],
+            [
+              "Mobile area tracking",
+              "Plan vs actual route, work-with, timing and GPS",
+              "Live",
+              "View report"
+            ],
+            [
+              "Missed doctor calls",
+              "Planned customers still awaiting a call",
+              "Daily",
+              "View report"
+            ],
+            [
+              "Tour plan deviation",
+              "Route and joint-working changes",
+              "Daily",
+              "View report"
+            ],
+            [
+              "Doctor-wise products",
+              "Product reach, POB, samples and gifts",
+              "Daily",
+              "View report"
+            ],
+            [
+              "Expenses and allowances",
+              "Claims, approvals and settlement",
+              "Daily",
+              "View report"
+            ],
+            [
+              "Campaign and joint working",
+              "Focus calls and manager activity",
+              "Daily",
+              "View report"
+            ]
+          ],
+          "to": "A33"
+        }
+      },
+      {
+        "id": "A33",
+        "title": "Field productivity",
+        "nav": "Reports",
+        "subtitle": "Measure productive coverage and identify where your team needs support.",
+        "actions": [
+          {
+            "label": "Export report",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "North zone",
+          "All HQs",
+          "All managers"
+        ],
+        "metrics": [
+          [
+            "Doctor coverage",
+            "86%",
+            "Target: 90%"
+          ],
+          [
+            "Call average",
+            "7.4",
+            "Per field working day"
+          ],
+          [
+            "Joint working",
+            "68 days",
+            "Across managers"
+          ],
+          [
+            "Reporting discipline",
+            "94%",
+            "Submitted within window"
+          ]
+        ],
+        "charts": [
+          "Doctor calls by month",
+          "Coverage trend"
+        ],
+        "table": {
+          "title": "Employee performance",
+          "cols": [
+            "Employee",
+            "Field days",
+            "Doctor / chemist calls",
+            "Coverage",
+            "Joint days",
+            "On-time DCR"
+          ],
+          "rows": [
+            [
+              "Aman Sharma",
+              "18",
+              "128 / 64",
+              "86%",
+              "6",
+              "94%"
+            ],
+            [
+              "Priya Singh",
+              "18",
+              "142 / 70",
+              "91%",
+              "5",
+              "100%"
+            ],
+            [
+              "Ravi Mehta",
+              "16",
+              "110 / 48",
+              "78%",
+              "4",
+              "88%"
+            ]
+          ],
+          "to": "A04",
+          "total": 36
+        }
+      },
+      {
+        "id": "A34",
+        "title": "Tour plan deviations",
+        "nav": "Reports",
+        "subtitle": "Compare intended coverage with actual work and documented reasons.",
+        "actions": [
+          {
+            "label": "Export deviations",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "All managers",
+          "Unreviewed changes"
+        ],
+        "metrics": [
+          [
+            "Route changes",
+            "18",
+            "Across 36 representatives"
+          ],
+          [
+            "Work-with changes",
+            "6",
+            "Planned vs actual"
+          ],
+          [
+            "Explained changes",
+            "20",
+            "Reason provided"
+          ],
+          [
+            "Needs review",
+            "4",
+            "Manager action"
+          ]
+        ],
+        "table": {
+          "title": "Plan vs actual",
+          "cols": [
+            "Employee / date",
+            "Planned route",
+            "Actual route",
+            "Planned / actual with",
+            "Reason",
+            "Review"
+          ],
+          "rows": [
+            [
+              "Aman Sharma · 21 Oct",
+              "Delhi to Delhi",
+              "Delhi to Mayur Vihar",
+              "Self / Anirudh Kumar",
+              "Clinic rescheduled",
+              {
+                "status": "Reviewed",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Ravi Mehta · 22 Oct",
+              "Jaipur local",
+              "Jaipur to Amer",
+              "Self / Self",
+              "Customer availability",
+              {
+                "status": "Pending",
+                "tone": "Warning"
+              }
+            ]
+          ],
+          "to": "A23"
+        }
+      },
+      {
+        "id": "A35",
+        "title": "Missed doctor coverage",
+        "nav": "Reports",
+        "subtitle": "Turn missed planned calls into clear follow-up actions.",
+        "actions": [
+          {
+            "label": "Export missed calls",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "Delhi HQ",
+          "All classes",
+          "Overdue"
+        ],
+        "metrics": [
+          [
+            "Missed planned calls",
+            "42",
+            "Across North zone"
+          ],
+          [
+            "A+ doctors",
+            "12",
+            "Priority follow-up"
+          ],
+          [
+            "Rescheduled",
+            "28",
+            "New date assigned"
+          ],
+          [
+            "Needs action",
+            "14",
+            "No next date"
+          ]
+        ],
+        "table": {
+          "title": "Missed planned visits",
+          "cols": [
+            "Doctor / class",
+            "Area",
+            "Representative",
+            "Planned date",
+            "Last visited",
+            "Next step"
+          ],
+          "rows": [
+            [
+              "Dr. Surendra Kumar · A",
+              "Geeta Colony",
+              "Aman Sharma",
+              "21 Oct",
+              "10 Sep",
+              "Schedule follow-up"
+            ],
+            [
+              "Dr. Neha Kapoor · A+",
+              "Mayur Vihar",
+              "Aman Sharma",
+              "20 Oct",
+              "New record",
+              "Plan first visit"
+            ],
+            [
+              "Dr. Anurag Gupta · A",
+              "Krishna Nagar",
+              "Priya Singh",
+              "19 Oct",
+              "02 Oct",
+              "Confirm availability"
+            ]
+          ],
+          "to": "A11",
+          "total": 42
+        }
+      },
+      {
+        "id": "A36",
+        "title": "Doctor-wise product reach",
+        "nav": "Reports",
+        "subtitle": "Understand product discussions, samples, inputs and commercial follow-through.",
+        "actions": [
+          {
+            "label": "Export product report",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "October 2026",
+          "All products",
+          "Delhi HQ",
+          "All campaigns"
+        ],
+        "metrics": [
+          [
+            "Doctors detailed",
+            "1,367",
+            "Unique doctors reached"
+          ],
+          [
+            "Focus product reach",
+            "78%",
+            "Campaign audience"
+          ],
+          [
+            "Samples issued",
+            "3,218",
+            "Traceable units"
+          ],
+          [
+            "Doctor POB",
+            "₹1.92L",
+            "From captured bookings"
+          ]
+        ],
+        "table": {
+          "title": "Product and doctor activity",
+          "cols": [
+            "Doctor",
+            "Products detailed",
+            "Samples / gifts",
+            "POB",
+            "Campaign",
+            "Last call"
+          ],
+          "rows": [
+            [
+              "Dr. Alka Jain",
+              "Hadensa · Face to Face",
+              "2 samples · 5 leaflets",
+              "₹3,161.08",
+              "October focus",
+              "22 Oct"
+            ],
+            [
+              "Dr. Anurag Gupta",
+              "Hadensa Capsules",
+              "3 samples",
+              "₹2,400.00",
+              "October focus",
+              "22 Oct"
+            ],
+            [
+              "Dr. Surendra Kumar",
+              "Curity Capsules",
+              "2 samples · 1 planner",
+              "₹1,680.00",
+              "General coverage",
+              "20 Oct"
+            ]
+          ],
+          "to": "A11",
+          "total": 1367
+        },
+        "extraTable": {
+          "title": "Campaign / joint-working view",
+          "cols": [
+            "Manager",
+            "Joint-working days",
+            "Focus calls",
+            "Doctors reached"
+          ],
+          "rows": [
+            [
+              "Anirudh Kumar",
+              "12",
+              "86",
+              "62"
+            ],
+            [
+              "Neeraj Verma",
+              "10",
+              "74",
+              "58"
+            ]
+          ],
+          "to": "A33"
+        }
+      },
+      {
+        "id": "A37",
+        "title": "Company reporting policies",
+        "nav": "Settings",
+        "subtitle": "Configure reporting rules, allowances and approval routing for your organization.",
+        "actions": [
+          {
+            "label": "Audit history",
+            "to": "A39",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Save policy",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "notice": [
+          "Configurable company rules",
+          "Values below are proposed examples. Confirm operational rules with the company before implementation.",
+          "Warning"
+        ],
+        "forms": [
+          {
+            "title": "Reporting and location",
+            "fields": [
+              [
+                "DCR reporting window",
+                "Same day · Configurable"
+              ],
+              [
+                "Backdated reporting",
+                "Manager approval required"
+              ],
+              [
+                "Expected check-in radius",
+                "Company-defined"
+              ],
+              [
+                "GPS exception routing",
+                "Regional manager review"
+              ],
+              [
+                "Tracking window",
+                "Day-plan start to final submission"
+              ],
+              [
+                "Reopen submitted reports",
+                "Manager return for correction"
+              ]
+            ]
+          },
+          {
+            "title": "Allowance rules",
+            "fields": [
+              [
+                "Local daily allowance",
+                "₹250.00"
+              ],
+              [
+                "Travel allowance rate",
+                "Company-defined per km"
+              ],
+              [
+                "Distance basis",
+                "Approved route / GPS policy"
+              ],
+              [
+                "Receipt threshold",
+                "Company-defined"
+              ],
+              [
+                "Expense approval route",
+                "Reporting manager → Finance"
+              ],
+              [
+                "Sponsorship approval route",
+                "Manager → Head office"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A38",
+        "title": "Integrations & data sync",
+        "nav": "Settings",
+        "subtitle": "Connect product, employee and commercial records across your systems.",
+        "actions": [
+          {
+            "label": "Save configuration",
+            "to": "A40",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "metrics": [
+          [
+            "Last master sync",
+            "09:00 AM",
+            "22 Oct 2026"
+          ],
+          [
+            "Queued records",
+            "3",
+            "Waiting to retry"
+          ],
+          [
+            "Sync success",
+            "99.2%",
+            "Last 7 days"
+          ],
+          [
+            "Failed records",
+            "2",
+            "Review required"
+          ]
+        ],
+        "table": {
+          "title": "Data connections",
+          "cols": [
+            "Connection",
+            "Data scope",
+            "Last run",
+            "Owner",
+            "Status"
+          ],
+          "rows": [
+            [
+              "ERP product master",
+              "Products · Pricing · Stockists",
+              "22 Oct · 09:00",
+              "Head office",
+              {
+                "status": "Connected",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Employee directory",
+              "Accounts · HQ · Reporting lines",
+              "22 Oct · 08:00",
+              "HR admin",
+              {
+                "status": "Connected",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Field upload service",
+              "Calls · Expenses · DCR",
+              "22 Oct · 18:16",
+              "System",
+              {
+                "status": "Retry queued",
+                "tone": "Warning"
+              }
+            ]
+          ],
+          "to": "A38"
+        },
+        "forms": [
+          {
+            "title": "Sync settings",
+            "fields": [
+              [
+                "Master refresh schedule",
+                "Daily before field work"
+              ],
+              [
+                "Retry policy",
+                "Automatic with manual review"
+              ],
+              [
+                "Integration owner",
+                "Head office administrator"
+              ],
+              [
+                "Conflict handling",
+                "Keep history and request resolution"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A39",
+        "title": "Audit log",
+        "nav": "Settings",
+        "subtitle": "Trace changes to records, permissions, approvals and exports.",
+        "actions": [
+          {
+            "label": "Export audit log",
+            "to": "A43",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "filters": [
+          "Last 7 days",
+          "All actors",
+          "All modules",
+          "All actions"
+        ],
+        "table": {
+          "title": "Activity history",
+          "cols": [
+            "Timestamp",
+            "Actor",
+            "Module",
+            "Action",
+            "Record",
+            "Details"
+          ],
+          "rows": [
+            [
+              "22 Oct · 18:22",
+              "Anirudh Kumar",
+              "DCR",
+              "Approved",
+              "DCR-1182",
+              "Decision and comment saved"
+            ],
+            [
+              "22 Oct · 18:20",
+              "Anirudh Kumar",
+              "Expense",
+              "Approved",
+              "EXP-0241",
+              "₹450 approved"
+            ],
+            [
+              "22 Oct · 17:10",
+              "Head office admin",
+              "Customer master",
+              "Updated",
+              "Dr. Neha Kapoor",
+              "Route changed"
+            ],
+            [
+              "22 Oct · 16:40",
+              "Head office admin",
+              "Reports",
+              "Exported",
+              "Tracking report",
+              "743 records · Excel"
+            ],
+            [
+              "22 Oct · 15:30",
+              "Head office admin",
+              "Permissions",
+              "Updated",
+              "Regional manager",
+              "Expense limit revised"
+            ]
+          ],
+          "total": 1842
+        }
+      },
+      {
+        "id": "A40",
+        "title": "Decision recorded",
+        "nav": "Approvals",
+        "subtitle": "The review action has been saved with its actor, time and comment.",
+        "notice": [
+          "Review saved",
+          "The representative will see the updated status and any required correction.",
+          "Success"
+        ],
+        "actions": [
+          {
+            "label": "View audit history",
+            "to": "A39",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Back to approvals",
+            "to": "A08",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "table": {
+          "title": "Latest review activity",
+          "cols": [
+            "Record",
+            "Decision",
+            "Reviewed by",
+            "When",
+            "Next step"
+          ],
+          "rows": [
+            [
+              "DCR-20261022-1182",
+              {
+                "status": "Approved",
+                "tone": "Success"
+              },
+              "Anirudh Kumar",
+              "22 Oct · 18:22",
+              "Visible in report history"
+            ],
+            [
+              "EXP-0241",
+              {
+                "status": "Approved",
+                "tone": "Success"
+              },
+              "Anirudh Kumar",
+              "22 Oct · 18:20",
+              "Awaiting settlement"
+            ]
+          ],
+          "to": "A39"
+        },
+        "forms": [
+          {
+            "title": "Decision context",
+            "fields": [
+              [
+                "Comment",
+                "Submission and supporting evidence reviewed."
+              ],
+              [
+                "Notification",
+                "Status update sent to representative"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A41",
+        "title": "Account & access assistance",
+        "nav": "Settings",
+        "subtitle": "Restore access or request the right permission from your company administrator.",
+        "notice": [
+          "Your work is protected",
+          "Local drafts and submitted records remain associated with your company account.",
+          "Brand"
+        ],
+        "forms": [
+          {
+            "title": "Reset company access",
+            "fields": [
+              [
+                "Company code *",
+                "VIDYA"
+              ],
+              [
+                "Employee ID or email *",
+                "admin@example.com"
+              ],
+              [
+                "Request type *",
+                "Password reset / Role access"
+              ],
+              [
+                "Reason",
+                "Need access to assigned approval queue"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Send access request",
+                "to": "A40",
+                "secondary": false,
+                "w": 180
+              },
+              {
+                "label": "Back to sign in",
+                "to": "A01",
+                "secondary": true,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A42",
+        "title": "Filter mobile tracking",
+        "nav": "Calls & tracking",
+        "subtitle": "Narrow the tracking report by company, geography, hierarchy and activity.",
+        "actions": [
+          {
+            "label": "Reset filters",
+            "to": "A42",
+            "secondary": true,
+            "w": 180
+          },
+          {
+            "label": "Apply filters",
+            "to": "A22",
+            "secondary": false,
+            "w": 180
+          }
+        ],
+        "forms": [
+          {
+            "title": "Reporting period & geography",
+            "fields": [
+              [
+                "From date *",
+                "01 Jun 2026"
+              ],
+              [
+                "To date *",
+                "30 Jun 2026"
+              ],
+              [
+                "Company *",
+                "VIDYA"
+              ],
+              [
+                "Zone",
+                "All"
+              ],
+              [
+                "State / city",
+                "All / All"
+              ],
+              [
+                "HQ / HQ group",
+                "All / All"
+              ]
+            ]
+          },
+          {
+            "title": "Hierarchy & report options",
+            "fields": [
+              [
+                "Division / division group",
+                "All / All"
+              ],
+              [
+                "Manager",
+                "All"
+              ],
+              [
+                "Employee",
+                "All"
+              ],
+              [
+                "Staff type *",
+                "Field staff & Admin"
+              ],
+              [
+                "Status",
+                "Present"
+              ],
+              [
+                "Working type",
+                "Working"
+              ],
+              [
+                "Call type",
+                "All"
+              ],
+              [
+                "Report type",
+                "Mobile"
+              ],
+              [
+                "Include details",
+                "Map · Photo · Call details"
+              ],
+              [
+                "Export format",
+                "Excel"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A43",
+        "title": "Export center",
+        "nav": "Reports",
+        "subtitle": "Your report exports, their scope and download status in one place.",
+        "actions": [
+          {
+            "label": "Back to reporting",
+            "to": "A32",
+            "secondary": true,
+            "w": 180
+          }
+        ],
+        "notice": [
+          "Export ready",
+          "Mobile area tracking · 743 records · Excel workbook",
+          "Success"
+        ],
+        "table": {
+          "title": "Recent exports",
+          "cols": [
+            "Report",
+            "Filters",
+            "Requested by",
+            "Created",
+            "Status / action"
+          ],
+          "rows": [
+            [
+              "Mobile area tracking",
+              "01–30 Jun · All field staff",
+              "Head office admin",
+              "22 Oct · 16:40",
+              {
+                "status": "Ready",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Expense statement",
+              "October · North zone",
+              "Anirudh Kumar",
+              "22 Oct · 15:10",
+              {
+                "status": "Ready",
+                "tone": "Success"
+              }
+            ],
+            [
+              "Doctor coverage",
+              "October · Delhi HQ",
+              "Head office admin",
+              "22 Oct · 14:32",
+              {
+                "status": "Processing",
+                "tone": "Warning"
+              }
+            ]
+          ]
+        },
+        "forms": [
+          {
+            "title": "Selected export",
+            "fields": [
+              [
+                "File",
+                "mobile-area-tracking-jun-2026.xlsx"
+              ],
+              [
+                "Included records",
+                "743 daily employee records"
+              ],
+              [
+                "Export scope",
+                "User permissions and selected filters"
+              ],
+              [
+                "Retention",
+                "Company-configured availability"
+              ]
+            ],
+            "actions": [
+              {
+                "label": "Download workbook",
+                "to": "A43",
+                "secondary": true,
+                "w": 180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

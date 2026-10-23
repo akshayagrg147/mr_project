@@ -1,0 +1,51 @@
+{
+  "verifiedAt": "2026-10-22T12:01:54.451302+00:00",
+  "api": {
+    "passed": 21,
+    "failed": 0
+  },
+  "browser": {
+    "passed": 6,
+    "failed": 0
+  },
+  "androidUnit": {
+    "passed": 5,
+    "failed": 0
+  },
+  "androidEmulator": {
+    "passed": 4,
+    "failed": 0,
+    "device": "MRConnect_QA Android 15/API 35 arm64",
+    "location": "Synthetic, explicitly marked mock; background activity transition and shift stop tested"
+  },
+  "builds": {
+    "typescript": "passed",
+    "adminProductionBundle": "passed",
+    "androidDebugApk": "passed"
+  },
+  "androidLint": {
+    "errors": 0,
+    "warnings": 21
+  },
+  "backupRestoreReadCheck": {
+    "integrity": "ok",
+    "foreignKeyErrors": 0,
+    "usersReadable": true
+  },
+  "notVerified": [
+    "Physical company handset and MDM policies",
+    "Full-shift battery, Doze, OEM process death/Recents/reboot/Force Stop behavior",
+    "Production deployment/signing/load testing",
+    "External ERP, email, SMS and FCM integrations",
+    "Spoken Hindi discussion (source recording has no audio)"
+  ],
+  "npmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "androidApkSha256": "6e7c98f20a24542a7e3a3f346a06bac4e988bbe75d40d882144726f4e757e5d7"
+}

@@ -1,0 +1,202 @@
+{
+  "validation": {
+    "screenCount": 139,
+    "mobileScreens": 86,
+    "adminScreens": 53,
+    "prototypeTransitions": 1531,
+    "brokenLinks": 0,
+    "horizontalTextOverflow": 0,
+    "unexpectedFonts": 0,
+    "flattenedUIImages": 0,
+    "componentSets": 5,
+    "mainComponents": 67,
+    "tokenCount": 59,
+    "textStyles": 10,
+    "source": "Video only; no audio track; Hindi discussion unverified"
+  },
+  "qa": {
+    "guide": {
+      "page": "00 · Guide & design system",
+      "allNodes": 941,
+      "texts": 332,
+      "fonts": {
+        "Manrope": 331,
+        "Noto Sans Devanagari": 1
+      },
+      "horizontalOverflow": [],
+      "brokenPrototypeLinks": [],
+      "prototypeTransitions": 0,
+      "imageFilledNodes": 0,
+      "topLevel": [
+        {
+          "id": "4:2",
+          "name": "02 / Design system · reusable foundations",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 2200
+        },
+        {
+          "id": "13:267",
+          "name": "MR/Bottom navigation",
+          "type": "COMPONENT_SET",
+          "width": 1370,
+          "height": 280
+        },
+        {
+          "id": "18:173",
+          "name": "START HERE / MR Connect · Product design",
+          "type": "FRAME",
+          "width": 1440,
+          "height": 996
+        },
+        {
+          "id": "18:208",
+          "name": "REVIEW GUIDE / How to navigate",
+          "type": "FRAME",
+          "width": 1440,
+          "height": 1210
+        },
+        {
+          "id": "18:249",
+          "name": "HANDOFF / Source coverage & decisions",
+          "type": "FRAME",
+          "width": 3000,
+          "height": 1876
+        },
+        {
+          "id": "18:402",
+          "name": "INDEX / Every screen & state",
+          "type": "FRAME",
+          "width": 3000,
+          "height": 1626
+        }
+      ],
+      "componentSets": 5,
+      "components": 67
+    },
+    "mobile": {
+      "page": "01 · Mobile app",
+      "allNodes": 5807,
+      "texts": 1730,
+      "fonts": {
+        "Manrope": 1722,
+        "Noto Sans Devanagari": 8
+      },
+      "horizontalOverflow": [],
+      "brokenPrototypeLinks": [],
+      "prototypeTransitions": 502,
+      "imageFilledNodes": 0,
+      "topLevel": [
+        {
+          "id": "6:8",
+          "name": "01 / Access & a planned day",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 2952
+        },
+        {
+          "id": "7:336",
+          "name": "02 / Calls, products & daily reporting",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 4840
+        },
+        {
+          "id": "7:1383",
+          "name": "03 / Customer masters & territory planning",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 3896
+        },
+        {
+          "id": "8:1275",
+          "name": "04 / Transactions, reports & your workspace",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 4840
+        },
+        {
+          "id": "8:2782",
+          "name": "05 / Complete states & exception flows",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 2952
+        },
+        {
+          "id": "11:2152",
+          "name": "06 / Additional customer call journeys",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 2008
+        },
+        {
+          "id": "12:2276",
+          "name": "07 / Transaction & chemist master navigation",
+          "type": "SECTION",
+          "width": 1800,
+          "height": 1064
+        }
+      ],
+      "componentSets": 0,
+      "components": 0
+    },
+    "admin": {
+      "page": "02 · Admin panel",
+      "allNodes": 12549,
+      "texts": 3375,
+      "fonts": {
+        "Manrope": 3375
+      },
+      "horizontalOverflow": [],
+      "brokenPrototypeLinks": [],
+      "prototypeTransitions": 1029,
+      "imageFilledNodes": 0,
+      "topLevel": [
+        {
+          "id": "9:8",
+          "name": "01 / Admin access, team & oversight",
+          "type": "SECTION",
+          "width": 3060,
+          "height": 5770
+        },
+        {
+          "id": "9:2403",
+          "name": "02 / Customers, territories & plans",
+          "type": "SECTION",
+          "width": 3060,
+          "height": 6900
+        },
+        {
+          "id": "9:5544",
+          "name": "03 / Field operations & review workflows",
+          "type": "SECTION",
+          "width": 3060,
+          "height": 6900
+        },
+        {
+          "id": "10:3814",
+          "name": "04 / Reporting, controls & handoff states",
+          "type": "SECTION",
+          "width": 3060,
+          "height": 6900
+        },
+        {
+          "id": "11:7749",
+          "name": "05 / Review, evidence & service states",
+          "type": "SECTION",
+          "width": 3060,
+          "height": 3510
+        },
+        {
+          "id": "12:8572",
+          "name": "06 / Customer forms & workspace configuration",
+          "type": "SECTION",
+          "width": 3060,
+          "height": 2380
+        }
+      ],
+      "componentSets": 0,
+      "components": 0
+    }
+  }
+}
